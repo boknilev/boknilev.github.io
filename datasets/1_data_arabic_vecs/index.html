@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Yonatan Belinkov | Arabic syntactic word vectors</title>
+  <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+  <link rel="stylesheet" href="https://boknilev.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://boknilev.github.io/datasets/1_data_arabic_vecs/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Yonatan</strong> Belinkov
+    </span>
+    
+
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="https://boknilev.github.io/">about</a>
+
+        <!-- Blog -->
+	<!-- 
+        <a class="page-link" href="https://boknilev.github.io/blog/">blog</a>
+	-->
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/students/">students</a>
+          
+        
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/teaching/">teaching</a>
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/talks/">talks</a>
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/advice/">advice</a>
+          
+        
+          
+            <a class="page-link" href="https://boknilev.github.io/assets/pdf/cv-belinkov.pdf">cv</a>
+          
+        
+          
+        
+          
+        
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Arabic syntactic word vectors</h1>
+    <p class="post-meta"></p>
+  </header>
+
+  <article class="post-content">
+    <p>The following word vectors have been used in our paper on PP attachment, following the methods proposed by <a href="http://www.aclweb.org/anthology/P14-2131.pdf">Bansal et al.</a> and <a href="http://www.aclweb.org/anthology/P14-2050.pdf">Levy and Goldberg</a>. We provide here vectors of 100 dimensions representing word lemmas. Get in touch for vectors of other dimensions and for vectors representing word tokens.</p>
+
+<ul>
+  <li>Vectors a la Bansal et al.: <a href="http://groups.csail.mit.edu/rbg/code/pp/arabic-syntactic-vecs/vectors.arabic.bansal.100.words.gz">words</a>; <a href="http://groups.csail.mit.edu/rbg/code/pp/arabic-syntactic-vecs/vectors.arabic.bansal.100.all.gz">all</a> (including grandparent and label vectors)</li>
+  <li>Vectors a la Levy and Goldberg: <a href="http://groups.csail.mit.edu/rbg/code/pp/arabic-syntactic-vecs/vectors.arabic.levy.100.words.gz">words</a>; <a href="http://groups.csail.mit.edu/rbg/code/pp/arabic-syntactic-vecs/vectors.arabic.levy.100.contexts.gz">contexts</a></li>
+</ul>
+
+<p>The vectors were trained from parsed texts in the following manner. First, we converted the morphologically-processed arTenTen corpus to <a href="CoNLL format">CoNLL format</a> with the <a href="http://www.aclweb.org/anthology/W13-4917.pdf">SPMRL shared-task</a> scripts. Then we parsed the corpus with a second-order <a href="http://sourceforge.net/projects/mstparser/">MST</a> parser, trained on the <a href="http://www.aclweb.org/anthology/P09-2056.pdf">CATiB</a> dependency treebank. Finally, we created syntactic word vectors using the <a href="https://code.google.com/p/word2vec/">word2vec</a> tool as described in the original papers, with the following differences: contrary to Levy and Goldberg, we do not collapse prepositional relations and we set a count threshold of 10. For the method of Bansal et al., we used a window size of 2 because we found it to be better in our case than their window size of 1.</p>
+
+<p>If you use the Arabic syntactic vectors, please cite the following paper:</p>
+
+<p><span id="belinkovTACL:2014">Belinkov, Y., Lei, T., Barzilay, R., &amp; Globerson, A. (2014). Exploring Compositional Architectures and Word Vector Representations for Prepositional Phrase Attachment. <i>Transactions of the Association for Computational Linguistics (TACL)</i>, <i>2</i>, 561–572. https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/view/488</span></p>
+
+<p>as well as the appropriate paper that introduced the original English vectors (Bansal et al. or Levy and Goldberg).</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+  	<p class="small">
+    © Copyright 2023 Yonatan Belinkov.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+</p>
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="https://boknilev.github.io/assets/js/common.js"></script>
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+<script src="https://boknilev.github.io/assets/js/katex.js"></script>
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="https://boknilev.github.io/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://boknilev.github.io/assets/css/academicons.min.css">
+
+
+  </body>
+
+</html>
