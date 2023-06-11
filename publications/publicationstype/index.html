@@ -1005,11 +1005,17 @@ Iterative Gradient-Based Projection.</span>
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
   
   
   
   
   
+  
+    [<a href="https://github.com/technion-cs-nlp/igbp_nonlinear-removal" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2305.10204" target="_blank">Arxiv</a>]
   
   
    
@@ -1017,6 +1023,10 @@ Iterative Gradient-Based Projection.</span>
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Natural language processing models tend to learn and encode social biases present in the data. One popular approach for addressing such biases is to eliminate encoded information from the model’s representations. However, current methods are restricted to removing only linearly encoded information. In this work, we propose Iterative Gradient-Based Projection (IGBP), a novel method for removing non-linear encoded concepts from neural representations. Our method consists of iteratively training neural classifiers to predict a particular attribute we seek to eliminate, followed by a projection of the representation on a hypersurface, such that the classifiers become oblivious to the target attribute. We evaluate the effectiveness of our method on the task of removing gender and race information as sensitive attributes. Our results demonstrate that IGBP is effective in mitigating bias through intrinsic and extrinsic evaluations, with minimal impact on downstream task accuracy.</p>
+  </span>
   
 </div>
 </li>
@@ -1066,10 +1076,14 @@ Iterative Gradient-Based Projection.</span>
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
   
   
   
   
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/BLIND" target="_blank">Code</a>]
   
   
     [<a href="https://arxiv.org/abs/2212.10563" target="_blank">Arxiv</a>]
@@ -1080,6 +1094,10 @@ Iterative Gradient-Based Projection.</span>
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Models trained on real-world data tend to imitate and amplify social biases. Common methods to mitigate biases require prior information on the types of biases that should be mitigated (e.g., gender or racial bias) and the social groups associated with each data sample. In this work, we introduce BLIND, a method for bias removal with no prior knowledge of the demographics in the dataset. While training a model on a downstream task, BLIND detects biased samples using an auxiliary model that predicts the main model’s success, and down-weights those samples during the training process. Experiments with racial and gender biases in sentiment classification and occupation classification tasks demonstrate that BLIND mitigates social biases without relying on a costly demographic annotation process. Our method is competitive with other methods that require demographic information and sometimes even surpasses them.</p>
+  </span>
   
 </div>
 </li>
@@ -1192,10 +1210,14 @@ Iterative Gradient-Based Projection.</span>
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
   
   
   
   
+  
+  
+    [<a href="https://github.com/ai21labs/parallel-context-windows" target="_blank">Code</a>]
   
   
   
@@ -1204,6 +1226,10 @@ Iterative Gradient-Based Projection.</span>
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>When applied for processing long text, Large Language Models (LLMs) are limited by their context window. Existing efforts to address this limitation involve training specialized architectures, and cannot be easily applied to off-the-shelf LLMs. We present Parallel Context Windows (PCW), a method that alleviates the context window restriction for any off-the-shelf LLM without further training. The key to the approach is to carve a long context into chunks (“windows”), restrict the attention mechanism to apply only within each window, and re-use the positional embeddings across the windows. Our main results test the PCW approach on in-context learning with models that range in size between 750 million and 178 billion parameters, and show substantial improvements for tasks with diverse input and output spaces. We show additional benefits in other settings where long context windows may be beneficial: multi-hop questions and retrieval-augmented question answering with multiple retrieved documents. Our results highlight Parallel Context Windows as a promising method for applying off-the-shelf LLMs in a range of settings that require long text sequences. We make our code publicly available at https://github.com/ai21labs/parallel-context-windows.</p>
+  </span>
   
 </div>
 </li>
@@ -1289,10 +1315,14 @@ Iterative Gradient-Based Projection.</span>
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
   
   
   
   
+  
+  
+    [<a href="https://github.com/oriram/dense-retrieval-projections" target="_blank">Code</a>]
   
   
     [<a href="https://arxiv.org/abs/2212.10380" target="_blank">Arxiv</a>]
@@ -1303,6 +1333,10 @@ Iterative Gradient-Based Projection.</span>
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Dual encoders are now the dominant architecture for dense retrieval. Yet, we have little understanding of how they represent text, and why this leads to good performance. In this work, we shed light on this question via distributions over the vocabulary. We propose to interpret the vector representations produced by dual encoders by projecting them into the model’s vocabulary space. We show that the resulting projections contain rich semantic information, and draw connection between them and sparse retrieval. We find that this view can offer an explanation for some of the failure cases of dense retrievers. For example, we observe that the inability of models to handle tail entities is correlated with a tendency of the token distributions to forget some of the tokens of those entities. We leverage this insight and propose a simple way to enrich query and passage representations with lexical information at inference time, and show that this significantly improves performance compared to the original model in zero-shot settings, and specifically on the BEIR benchmark.</p>
+  </span>
   
 </div>
 </li>
