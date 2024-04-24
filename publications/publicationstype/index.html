@@ -168,6 +168,10 @@
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/tacl2024.pdf" target="_blank">PDF</a>]
   
   
   
@@ -182,6 +186,99 @@
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent studies show that instruction tuning (IT) and reinforcement learning from human feedback (RLHF) improve the abilities of large language models (LMs) dramatically. While these tuning methods can help align models with human objectives and generate high-quality text, not much is known about their potential adverse effects. In this work, we investigate the effect of IT and RLHF on decision making and reasoning in LMs, focusing on three cognitive biases—the decoy effect, the certainty effect, and the belief bias—all of which are known to influence human decision-making and reasoning. Our findings highlight the presence of these biases in various models from the GPT-3, Mistral, and T5 families. Notably, we find a stronger presence of biases in models that have undergone instruction tuning, such as Flan-T5, Mistral-Instruct, GPT3.5, and GPT4. Our work constitutes a step toward comprehending cognitive biases in instruction-tuned LMs, which is crucial for the development of more reliable and unbiased language models.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="dotan:2024:bioinformatics">
+  
+    <span class="title">Effect of Tokenization on Transformers for Biological Sequences.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Edo Dotan,
+            
+          
+        
+      
+        
+          
+          
+            
+              Gal Jaschek,
+            
+          
+        
+      
+        
+          
+          
+            
+              Tal Pupko,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>Bioinformatics</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/bioinformatics2024.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/BiologicalTokenizers" target="_blank">Code</a>]
+  
+  
+    [<a href="https://www.biorxiv.org/content/10.1101/2023.08.15.553415" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Deep-learning models are transforming biological research, including many bioinformatics and comparative genomics algorithms, such as sequence alignments, phylogenetic tree inference, and automatic classification of protein functions. Among these deep-learning algorithms, models for processing natural languages, developed in the natural language processing (NLP) community, were recently applied to biological sequences. However, biological sequences are different from natural languages, such as English, and French, in which segmentation of the text to separate words is relatively straightforward. Moreover, biological sequences are characterized by extremely long sentences, which hamper their processing by current machine-learning models, notably the transformer architecture. In NLP, one of the first processing steps is to transform the raw text to a list of tokens. Deep-learning applications to biological sequence data mostly segment proteins and DNA to single characters. In this work, we study the effect of alternative tokenization algorithms on eight different tasks in biology, from predicting the function of proteins and their stability, through nucleotide sequence alignment, to classifying proteins to specific families. We demonstrate that applying alternative tokenization algorithms can increase accuracy and at the same time, substantially reduce the input length compared to the trivial tokenizer in which each character is a token. Furthermore, applying these tokenization algorithms allows interpreting trained models, taking into account dependencies among positions. Finally, we trained these tokenizers on a large dataset of protein sequences containing more than 400 billion amino acids, which resulted in over a three-fold decrease in the number of tokens. We then tested these tokenizers trained on large-scale data on the above specific tasks and showed that for some tasks it is highly beneficial to train database-specific tokenizers. Our study suggests that tokenizers are likely to be a critical component in future deep-network analysis of biological sequence data.</p>
+  </span>
   
 </div>
 </li>
@@ -867,7 +964,7 @@
           
           
             
-              <a href="http://people.csail.mit.edu/regina/" target="_blank">Regina Barzilay</a>,
+              Regina Barzilay,
             
           
         
@@ -1182,25 +1279,16 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   <abbr>[NAACL]</abbr>
 
 
-<div id="iskander:2024:naacl">
+<div id="rahamim:2024:naacl">
   
-    <span class="title">Leveraging Prototypical Representations for Mitigating Social Bias without Demographic Information.</span>
+    <span class="title">ContraSim – A Similarity Measure Based on Contrastive Learning.</span>
     <span class="author">
       
         
           
           
             
-              Shadi Iskander,
-            
-          
-        
-      
-        
-          
-          
-            
-              Kira Radinsky,
+              Adir Rahamim,
             
           
         
@@ -1233,11 +1321,19 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2024-contrasim.pdf" target="_blank">PDF</a>]
   
   
   
   
   
+    [<a href="https://github.com/technion-cs-nlp/ContraSim" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2303.16992" target="_blank">Arxiv</a>]
   
   
    
@@ -1245,6 +1341,10 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent work has compared neural network representations via similarity-based analyses to improve model interpretation. The quality of a similarity measure is typically evaluated by its success in assigning a high score to representations that are expected to be matched. However, existing similarity measures perform mediocrely on standard benchmarks.  In this work, we develop a new similarity measure, dubbed ContraSim, based on contrastive learning. In contrast to common closed-form similarity measures, ContraSim learns a parameterized measure by using both similar and dissimilar examples.  We perform an extensive experimental evaluation of our method, with both language and vision models, on the standard layer prediction benchmark and two new benchmarks that we introduce: the multilingual benchmark and the image–caption benchmark. In all cases, ContraSim achieves much higher accuracy than previous similarity measures, even when presented with challenging examples. Finally, ContraSim is more suitable for the analysis of neural networks, revealing new insights not captured by previous measures.</p>
+  </span>
   
 </div>
 </li>
@@ -1303,10 +1403,16 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2024-refact.pdf" target="_blank">PDF</a>]
   
   
   
   
+  
+    [<a href="https://technion-cs-nlp.github.io/ReFACT/" target="_blank">Code</a>]
   
   
     [<a href="https://arxiv.org/abs/2306.00738" target="_blank">Arxiv</a>]
@@ -1317,6 +1423,10 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Our world is marked by unprecedented technological, global, and socio-political transformations, posing a significant challenge to textto-image generative models. These models encode factual associations within their parameters that can quickly become outdated, diminishing their utility for end-users. To that end, we introduce ReFACT, a novel approach for editing factual associations in text-to-image models without relaying on explicit input from end-users or costly re-training. ReFACT updates the weights of a specific layer in the text encoder, modifying only a tiny portion of the model’s parameters and leaving the rest of the model unaffected. We empirically evaluate ReFACT on an existing benchmark, alongside a newly curated dataset. Compared to other methods, ReFACT achieves superior performance in both generalization to related concepts and preservation of unrelated concepts. Furthermore, ReFACT maintains image generation quality, making it a practical tool for updating and correcting factual information in text-to-image models.</p>
+  </span>
   
 </div>
 </li>
@@ -1781,16 +1891,25 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   <abbr>[NAACL]</abbr>
 
 
-<div id="rahamim:2024:naacl">
+<div id="iskander:2024:naacl">
   
-    <span class="title">ContraSim – A Similarity Measure Based on Contrastive Learning.</span>
+    <span class="title">Leveraging Prototypical Representations for Mitigating Social Bias without Demographic Information.</span>
     <span class="author">
       
         
           
           
             
-              Adir Rahamim,
+              Shadi Iskander,
+            
+          
+        
+      
+        
+          
+          
+            
+              Kira Radinsky,
             
           
         
@@ -1823,13 +1942,19 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2024-dafair.pdf" target="_blank">PDF</a>]
   
   
   
   
   
+    [<a href="https://github.com/technion-cs-nlp/DAFair" target="_blank">Code</a>]
   
-    [<a href="https://arxiv.org/abs/2303.16992" target="_blank">Arxiv</a>]
+  
+    [<a href="https://arxiv.org/abs/2403.09516" target="_blank">Arxiv</a>]
   
   
    
@@ -1837,6 +1962,10 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Mitigating social biases typically requires identifying the social groups associated with each data sample. In this paper, we present DAFair, a novel approach to address social bias in language models. Unlike traditional methods that rely on explicit demographic labels, our approach does not require any such information. Instead, we leverage predefined prototypical demographic texts and incorporate a regularization term during the fine-tuning process to mitigate bias in the model’s representations. Our empirical results across two tasks and two models demonstrate the effectiveness of our method compared to previous approaches that do not rely on labeled data. Moreover, with limited demographic-annotated data, our approach outperforms common debiasing approaches.</p>
+  </span>
   
 </div>
 </li>
@@ -2560,6 +2689,106 @@ Iterative Gradient-Based Projection.</span>
   <abbr>[ICLR]</abbr>
 
 
+<div id="meng:2023:memit">
+  
+    <span class="title">Mass-Editing Memory in a Transformer.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Kevin Meng,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma,
+            
+          
+        
+      
+        
+          
+          
+            
+              Alex Andonian,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
+    
+    
+      2023
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
+  
+  
+    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
 <div id="dotan:2023:iclr">
   
     <span class="title">Multiple sequence alignment as a sequence-to-sequence learning problem.</span>
@@ -2686,106 +2915,6 @@ Iterative Gradient-Based Projection.</span>
   
   <span class="abstract hidden">
     <p>The sequence alignment problem is one of the most fundamental problems in bioinformatics and a plethora of methods were devised to tackle it. Here we introduce BetaAlign, a methodology for aligning sequences using an NLP approach. BetaAlign accounts for the possible variability of the evolutionary process among different datasets by using an ensemble of transformers, each trained on millions of samples generated from a different evolutionary model. Our approach leads to alignment accuracy that is similar and often better than commonly used methods, such as MAFFT, DIALIGN, ClustalW, T-Coffee, PRANK, and MUSCLE.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="meng:2023:memit">
-  
-    <span class="title">Mass-Editing Memory in a Transformer.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Kevin Meng,
-            
-          
-        
-      
-        
-          
-          
-            
-              Arnab Sen Sharma,
-            
-          
-        
-      
-        
-          
-          
-            
-              Alex Andonian,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
-    
-    
-      2023
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
-  
-  
-    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
   </span>
   
 </div>
@@ -3199,6 +3328,88 @@ Iterative Gradient-Based Projection.</span>
 </div>
 </li>
 <li>
+  <abbr>[NAACL]</abbr>
+
+
+<div id="orgad:2022:NAACL">
+  
+    <span class="title">How Gender Debiasing Affects Internal Model Representations, and Why It Matters.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Seraphina Goldfarb-Tarrant,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
+    
+    
+      2022
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2022.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/gender_internal" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2204.06827" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together: we debias a model during downstream fine-tuning, which reduces extrinsic bias, and measure the effect on intrinsic bias, which is operationalized as bias extractability with information-theoretic probing. Through experiments on two tasks and multiple bias metrics, we show that our intrinsic bias metric is a better indicator of debiasing than (a contextual adaptation of) the standard WEAT metric, and can also expose cases of superficial debiasing. Our framework provides a comprehensive perspective on bias in NLP models, which can be applied to deploy NLP systems in a more informed manner. Our code will be made publicly available.</p>
+  </span>
+  
+</div>
+</li>
+<li>
 
 <div id="orgad:2022:GeBNLP">
   
@@ -3346,88 +3557,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   
   <span class="abstract hidden">
     <p>Many natural language inference (NLI) datasets contain biases that allow models to perform well by only using a biased subset of the input, without considering the remainder features. For instance, models are able to classify samples by only using the hypothesis, without learning the true relationship between it and the premise. These structural biases lead discriminative models to learn unintended superficial features and generalize poorly out of the training distribution. In this work, we reformulate NLI as a generative task, where a model is conditioned on the biased subset of the input and the label and generates the remaining subset of the input. We show that by imposing a uniform prior, we obtain a provably unbiased model. Through synthetic experiments, we find this approach to be highly robust to large amounts of bias. We then demonstrate empirically on two types of natural bias that this approach leads to fully unbiased models in practice. However, we find that generative models are difficult to train and generally perform worse than discriminative baselines. We highlight the difficulty of the generative modeling task in the context of NLI as a cause for this worse performance. Finally, by fine-tuning the generative model with a discriminative objective, we reduce the performance gap between the generative model and the discriminative baseline, while allowing for a small amount of bias.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[NAACL]</abbr>
-
-
-<div id="orgad:2022:NAACL">
-  
-    <span class="title">How Gender Debiasing Affects Internal Model Representations, and Why It Matters.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Seraphina Goldfarb-Tarrant,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
-    
-    
-      2022
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/naacl2022.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/technion-cs-nlp/gender_internal" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/2204.06827" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together: we debias a model during downstream fine-tuning, which reduces extrinsic bias, and measure the effect on intrinsic bias, which is operationalized as bias extractability with information-theoretic probing. Through experiments on two tasks and multiple bias metrics, we show that our intrinsic bias metric is a better indicator of debiasing than (a contextual adaptation of) the standard WEAT metric, and can also expose cases of superficial debiasing. Our framework provides a comprehensive perspective on bias in NLP models, which can be applied to deploy NLP systems in a more informed manner. Our code will be made publicly available.</p>
   </span>
   
 </div>
@@ -4356,6 +4485,95 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <abbr>[EMNLP]</abbr>
 
 
+<div id="dalvi:2020:emnlp">
+  
+    <span class="title">Analyzing Redundancy in Pretrained Transformer Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/emnlp2020-redundancy.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2004.04010" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as: i) 85% of the neurons across the network are redundant and ii) at least 92% of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97% performance while using at-most 10% of the original neurons.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[EMNLP]</abbr>
+
+
 <div id="durrani:2020:emnlp">
   
     <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
@@ -4603,19 +4821,19 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
-  <abbr>[EMNLP]</abbr>
+  <abbr>[ACL]</abbr>
 
 
-<div id="dalvi:2020:emnlp">
+<div id="Mahabadi:2020:acl">
   
-    <span class="title">Analyzing Redundancy in Pretrained Transformer Models.</span>
+    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
     <span class="author">
       
         
           
           
             
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+              Rabeeh Karimi Mahabadi,
             
           
         
@@ -4623,18 +4841,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
         
           
           
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
+            <em>Yonatan Belinkov</em>,
           
         
       
@@ -4642,7 +4849,9 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
           
-            <em>Yonatan Belinkov</em>
+            
+              James Henderson
+            
           
         
       
@@ -4651,7 +4860,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     
     <span class="periodical">
     
-      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
+      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
     
     
       2020
@@ -4669,14 +4878,16 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/emnlp2020-redundancy.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
   
   
   
   
   
+    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
   
-    [<a href="https://arxiv.org/abs/2004.04010" target="_blank">Arxiv</a>]
+  
+    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
   
   
    
@@ -4686,7 +4897,23 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as: i) 85% of the neurons across the network are redundant and ii) at least 92% of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97% performance while using at-most 10% of the original neurons.</p>
+    <p>Several recent studies have shown that strong natural language understanding
+(NLU) models are prone to relying on unwanted dataset biases without learning
+the underlying task, resulting in models that fail to generalize to
+out-of-domain datasets and are likely to perform poorly in real-world
+scenarios. We propose two learning strategies to train neural models, which are
+more robust to such biases and transfer better to out-of-domain datasets. The
+biases are specified in terms of one or more bias-only models, which learn to
+leverage the dataset biases. During training, the bias-only models’ predictions
+are used to adjust the loss of the base model to reduce its reliance on biases
+by down-weighting the biased examples and focusing the training on the hard
+examples. We experiment on large-scale natural language inference and fact
+verification benchmarks, evaluating on out-of-domain datasets that are
+specifically designed to assess the robustness of models against known biases
+in the training data. Results show that our debiasing methods greatly improve
+robustness in all settings and better transfer to other textual entailment
+datasets. Our code and data are publicly available in
+\urlhttps://github.com/rabeehk/robust-nli.</p>
   </span>
   
 </div>
@@ -4795,104 +5022,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <span class="abstract hidden">
     <p>Large-scale pretrained language models are the major driving force behind recent improvements in performance on the Winograd Schema Challenge, a widely employed test of commonsense reasoning ability. We show, however, with a new diagnostic dataset, that these models are sensitive to linguistic perturbations of the Winograd examples that minimally affect human understanding. Our results highlight interesting differences between humans and language models: language models are more sensitive to a number or gender alternations and synonym replacements than humans, and humans are more stable and consistent in their predictions, maintain a much higher absolute performance, and perform better on non-associative instances than associative ones. 
 Overall, humans are correct more often than out-of-the-box models, and the models are sometimes right for the wrong reasons. Finally, we show that fine-tuning on a large, task-specific dataset can offer a solution to these issues.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ACL]</abbr>
-
-
-<div id="Mahabadi:2020:acl">
-  
-    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Rabeeh Karimi Mahabadi,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              James Henderson
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Several recent studies have shown that strong natural language understanding
-(NLU) models are prone to relying on unwanted dataset biases without learning
-the underlying task, resulting in models that fail to generalize to
-out-of-domain datasets and are likely to perform poorly in real-world
-scenarios. We propose two learning strategies to train neural models, which are
-more robust to such biases and transfer better to out-of-domain datasets. The
-biases are specified in terms of one or more bias-only models, which learn to
-leverage the dataset biases. During training, the bias-only models’ predictions
-are used to adjust the loss of the base model to reduce its reliance on biases
-by down-weighting the biased examples and focusing the training on the hard
-examples. We experiment on large-scale natural language inference and fact
-verification benchmarks, evaluating on out-of-domain datasets that are
-specifically designed to assess the robustness of models against known biases
-in the training data. Results show that our debiasing methods greatly improve
-robustness in all settings and better transfer to other textual entailment
-datasets. Our code and data are publicly available in
-\urlhttps://github.com/rabeehk/robust-nli.</p>
   </span>
   
 </div>
@@ -8783,16 +8912,17 @@ We propose a framework that facilitates better understanding of the encoded repr
 <h2 class="bibliography">Preprints</h2>
 <ol class="bibliography"><li>
 
-<div id="suzgun:dyck">
+<div id="simhi:hallucinations">
   
-    <span class="title">Memory-Augmented Recurrent Neural Networks Can Learn Generalized Dyck Languages.</span>
+    <span class="title">Constructing Benchmarks and Interventions for Combating Hallucinations
+  in LLMs.</span>
     <span class="author">
       
         
           
           
             
-              Mirac Suzgun,
+              Adi Simhi,
             
           
         
@@ -8801,7 +8931,74 @@ We propose a framework that facilitates better understanding of the encoded repr
           
           
             
-              <a href="https://www.sebastiangehrmann.com" target="_blank">Sebastian Gehrmann</a>,
+              Jonathan Herzig,
+            
+          
+        
+      
+        
+          
+          
+            
+              Idan Szpektor,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2404.09971" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="carmeli:cbm">
+  
+    <span class="title">Concept-Best-Matching: Evaluating Compositionality in Emergent
+  Communication.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Boaz Carmeli,
             
           
         
@@ -8818,7 +9015,7 @@ We propose a framework that facilitates better understanding of the encoded repr
           
           
             
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
+              Ron Meir
             
           
         
@@ -8845,7 +9042,7 @@ We propose a framework that facilitates better understanding of the encoded repr
   
   
   
-    [<a href="https://arxiv.org/abs/1911.03329" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2403.14705" target="_blank">Arxiv</a>]
   
   
    
@@ -8921,204 +9118,6 @@ We propose a framework that facilitates better understanding of the encoded repr
   
   
     [<a href="https://arxiv.org/abs/2402.12865" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="dotan:tokenization">
-  
-    <span class="title">Effect of Tokenization on Transformers for Biological Sequences.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Edo Dotan,
-            
-          
-        
-      
-        
-          
-          
-            
-              Gal Jaschek,
-            
-          
-        
-      
-        
-          
-          
-            
-              Tal Pupko,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://www.biorxiv.org/content/10.1101/2023.08.15.553415" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="arad:refact">
-  
-    <span class="title">ReFACT: Updating Text-to-Image Models by Editing the Text Encoder.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Dana Arad*,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad*</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2306.00738" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="rahamim:contrasim">
-  
-    <span class="title">ContraSim – A Similarity Measure Based on Contrastive Learning.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Adir Rahamim,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2303.16992" target="_blank">Arxiv</a>]
   
   
    
@@ -9353,17 +9352,25 @@ We propose a framework that facilitates better understanding of the encoded repr
 </li>
 <li>
 
-<div id="carmeli:cbm">
+<div id="suzgun:dyck">
   
-    <span class="title">Concept-Best-Matching: Evaluating Compositionality in Emergent
-  Communication.</span>
+    <span class="title">Memory-Augmented Recurrent Neural Networks Can Learn Generalized Dyck Languages.</span>
     <span class="author">
       
         
           
           
             
-              Boaz Carmeli,
+              Mirac Suzgun,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://www.sebastiangehrmann.com" target="_blank">Sebastian Gehrmann</a>,
             
           
         
@@ -9380,7 +9387,7 @@ We propose a framework that facilitates better understanding of the encoded repr
           
           
             
-              Ron Meir
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
             
           
         
@@ -9407,7 +9414,7 @@ We propose a framework that facilitates better understanding of the encoded repr
   
   
   
-    [<a href="https://arxiv.org/abs/2403.14705" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/1911.03329" target="_blank">Arxiv</a>]
   
   
    
