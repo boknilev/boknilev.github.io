@@ -106,6 +106,247 @@
 <h2 class="bibliography">Preprints</h2>
 <ol class="bibliography"><li>
 
+<div id="mueller:mediator">
+  
+    <span class="title">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Aaron Mueller,
+            
+          
+        
+      
+        
+          
+          
+            
+              Jannik Brinkmann,
+            
+          
+        
+      
+        
+          
+          
+            
+              Millicent Li,
+            
+          
+        
+      
+        
+          
+          
+            
+              Samuel Marks,
+            
+          
+        
+      
+        
+          
+          
+            
+              Koyena Pal,
+            
+          
+        
+      
+        
+          
+          
+            
+              Nikhil Prakash,
+            
+          
+        
+      
+        
+          
+          
+            
+              Can Rager,
+            
+          
+        
+      
+        
+          
+          
+            
+              Aruna Sankaranarayanan,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma,
+            
+          
+        
+      
+        
+          
+          
+            
+              Jiuding Sun,
+            
+          
+        
+      
+        
+          
+          
+            
+              Eric Todd,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2408.01416" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="wiegreffe:mcqa">
+  
+    <span class="title">Answer, Assemble, Ace: Understanding How Transformers Answer Multiple
+  Choice Question.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Sarah Wiegreffe,
+            
+          
+        
+      
+        
+          
+          
+            
+              Oyvind Tafjord,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+            
+              Hannaneh Hajishirzi,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Ashish Sabharwal
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2407.15018" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
 <div id="simhi:hallucinations">
   
     <span class="title">Constructing Benchmarks and Interventions for Combating Hallucinations
@@ -555,6 +796,84 @@
 
 <h2 class="bibliography">2024</h2>
 <ol class="bibliography"><li>
+  <abbr>[COLM]</abbr>
+
+
+<div id="hanna:2024:colm">
+  
+    <span class="title">Have Faith in Faithfulness: Going Beyond Circuit Overlap When Finding Model Mechanism.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Michael Hanna,
+            
+          
+        
+      
+        
+          
+          
+            
+              Sandro Pezzelle,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2024 Conference on Language Models (COLM)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2403.17806" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Many recent language model (LM) interpretability studies have adopted the circuits framework, which aims to find the minimal computational subgraph, or circuit, that explains LM behavior on a given task. Most studies determine which edges belong in a LM’s circuit by performing causal interventions on each edge independently, but this scales poorly with model size. Edge attribution patching (EAP), gradient-based approximation to interventions, has emerged as a scalable but imperfect solution to this problem. In this paper, we introduce a new method - EAP with integrated gradients (EAP-IG) - that aims to better maintain a core property of circuits: faithfulness. A circuit is faithful if all model edges outside the circuit can be ablated without changing the model’s performance on the task; faithfulness is what justifies studying circuits, rather than the full model. Our experiments demonstrate that circuits found using EAP are less faithful than those found using EAP-IG, even though both have high node overlap with circuits found previously using causal interventions. We conclude more generally that when using circuits to compare the mechanisms models use to solve tasks, faithfulness, not overlap, is what should be measured.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[AAAI]</abbr>
 
 
@@ -703,6 +1022,73 @@
 </div>
 </li>
 <li>
+  <abbr>[RepL4NLP]</abbr>
+
+
+<div id="igbaria:repl4nlp:2024">
+  
+    <span class="title">Learning from Others: Similarity-based Regularization for Mitigating Dataset Bias.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Reda Igbaria,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 9th Workshop on Representation Learning for NLP (RepL4NLP)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Common methods for mitigating spurious correlations in natural language understanding (NLU) usually operate in the output space, encouraging a main model to behave differently from a bias model by down-weighing examples where the bias model is confident. While improving out of distribution (OOD) performance, it was recently observed that the internal representations of the presumably debiased models are actually more, rather than less biased. We propose SimgReg, a new method for debiasing internal model components via similarity-based regularization, in representation space: We encourage the model to learn representations that are either similar to an unbiased model or different from a biased model. We experiment with three NLU tasks and different kinds of biases. We find that SimReg improves OOD performance, with little in-distribution degradation. Moreover, the representations learned by SimReg are less biased than in other methods.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[ACL]</abbr>
 
 
@@ -743,7 +1129,7 @@
     
     <span class="periodical">
     
-      <em>In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+      <em>In Findings of the Association for Computational Linguistics (ACL)</em>
     
     
       2024
@@ -1097,6 +1483,8 @@
   
    
   
+    [Media: <a href="https://techxplore.com/news/2024-06-biases-image-generator.html" target="_blank">Tech Xplore</a>, <a href="https://www.geektime.co.il/isareli-researchers-may-be-able-to-help-ai-image-generators/" target="_blank">Geektime</a>] 
+  
   </span>
 
   <!-- Hidden abstract block -->
@@ -1183,6 +1571,8 @@
   
     [<a href="https://arxiv.org/abs/2308.00225" target="_blank">Arxiv</a>]
   
+  
+    [<a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00673/121541/Instructed-to-Bias-Instruction-Tuned-Language" target="_blank">URL</a>]
   
    
   
@@ -1276,6 +1666,8 @@
   
   
   
+  
+    [<a href="https://arxiv.org/abs/2402.17371" target="_blank">Arxiv</a>]
   
   
    
@@ -1657,7 +2049,7 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   <abbr>[ACL]</abbr>
 
 
-<div id="carmeli:acl:2025">
+<div id="toker:acl:2024">
   
     <span class="title">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.</span>
     <span class="author">
@@ -1733,6 +2125,8 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   
   
   
+  
+    [<a href="https://arxiv.org/abs/2403.05846" target="_blank">Arxiv</a>]
   
   
    
@@ -2055,6 +2449,8 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   
    
   
+    [Media: <a href="https://techxplore.com/news/2024-06-biases-image-generator.html" target="_blank">Tech Xplore</a>, <a href="https://www.geektime.co.il/isareli-researchers-may-be-able-to-help-ai-image-generators/" target="_blank">Geektime</a>] 
+  
   </span>
 
   <!-- Hidden abstract block -->
@@ -2185,6 +2581,8 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   
     [<a href="https://github.com/ai21labs/parallel-context-windows" target="_blank">Code</a>]
   
+  
+    [<a href="https://arxiv.org/abs/2212.10947" target="_blank">Arxiv</a>]
   
   
    
@@ -2468,6 +2866,106 @@ Iterative Gradient-Based Projection.</span>
   <abbr>[ICLR]</abbr>
 
 
+<div id="meng:2023:memit">
+  
+    <span class="title">Mass-Editing Memory in a Transformer.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Kevin Meng,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma,
+            
+          
+        
+      
+        
+          
+          
+            
+              Alex Andonian,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
+    
+    
+      2023
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
+  
+  
+    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
 <div id="dotan:2023:iclr">
   
     <span class="title">Multiple sequence alignment as a sequence-to-sequence learning problem.</span>
@@ -2594,106 +3092,6 @@ Iterative Gradient-Based Projection.</span>
   
   <span class="abstract hidden">
     <p>The sequence alignment problem is one of the most fundamental problems in bioinformatics and a plethora of methods were devised to tackle it. Here we introduce BetaAlign, a methodology for aligning sequences using an NLP approach. BetaAlign accounts for the possible variability of the evolutionary process among different datasets by using an ensemble of transformers, each trained on millions of samples generated from a different evolutionary model. Our approach leads to alignment accuracy that is similar and often better than commonly used methods, such as MAFFT, DIALIGN, ClustalW, T-Coffee, PRANK, and MUSCLE.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="meng:2023:memit">
-  
-    <span class="title">Mass-Editing Memory in a Transformer.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Kevin Meng,
-            
-          
-        
-      
-        
-          
-          
-            
-              Arnab Sen Sharma,
-            
-          
-        
-      
-        
-          
-          
-            
-              Alex Andonian,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
-    
-    
-      2023
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
-  
-  
-    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
   </span>
   
 </div>
@@ -4504,95 +4902,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
-  <abbr>[EMNLP]</abbr>
-
-
-<div id="durrani:2020:emnlp">
-  
-    <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/emnlp2020-neurons.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2010.02695" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons. We carry out a neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[WMT]</abbr>
 
 
@@ -4754,27 +5063,20 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
-  <abbr>[ACL]</abbr>
+  <abbr>[EMNLP]</abbr>
 
 
-<div id="wu:2020:acl">
+<div id="durrani:2020:emnlp">
   
-    <span class="title">Similarity Analysis of Contextual Word Representation Models.</span>
+    <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
     <span class="author">
       
         
           
           
             
-              John M. Wu*,
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
             
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov*</em>,
           
         
       
@@ -4783,15 +5085,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
             
               <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
             
           
         
@@ -4809,9 +5102,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
           
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
+            <em>Yonatan Belinkov</em>
           
         
       
@@ -4820,7 +5111,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     
     <span class="periodical">
     
-      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
     
     
       2020
@@ -4838,16 +5129,14 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/acl2020.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/emnlp2020-neurons.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/johnmwu/contextual-corr-analysis" target="_blank">Code</a>]
   
-  
-    [<a href="https://arxiv.org/abs/2005.01172" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2010.02695" target="_blank">Arxiv</a>]
   
   
    
@@ -4857,7 +5146,101 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from  vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation.  The analysis reveals that  models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures  have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.</p>
+    <p>While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons. We carry out a neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="saleh:2020">
+  
+    <span class="title">Probing Neural Dialog Models for Conversational Understanding.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Abdelrhman Saleh,
+            
+          
+        
+      
+        
+          
+          
+            
+              Tovly Deutsch,
+            
+          
+        
+      
+        
+          
+          
+            
+              Stephen Casper,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the Second Workshop on NLP for Conversational AI (NLP4ConvAI)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/nlp4convai2020.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>The predominant approach to open-domain dialog generation relies on end-to-end training of neural models on chat datasets. However, this approach provides little insight as to what these models learn (or do not learn) about engaging in dialog. In this study, we analyze the internal representations learned by neural open-domain dialog systems and evaluate the quality of these representations for learning basic conversational skills. Our results suggest that standard open-domain dialog systems struggle with answering questions, inferring contradiction, and determining the topic of conversation, among other tasks. We also find that the dyadic, turn-taking nature of dialog is not fully leveraged by these models. By exploring these limitations, we highlight the need for additional research into architectures and training methods that can better capture high-level information about dialog.</p>
   </span>
   
 </div>
@@ -5069,17 +5452,35 @@ datasets. Our code and data are publicly available in
 </div>
 </li>
 <li>
+  <abbr>[ACL]</abbr>
 
-<div id="saleh:2020">
+
+<div id="wu:2020:acl">
   
-    <span class="title">Probing Neural Dialog Models for Conversational Understanding.</span>
+    <span class="title">Similarity Analysis of Contextual Word Representation Models.</span>
     <span class="author">
       
         
           
           
             
-              Abdelrhman Saleh,
+              John M. Wu*,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov*</em>,
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
             
           
         
@@ -5088,7 +5489,7 @@ datasets. Our code and data are publicly available in
           
           
             
-              Tovly Deutsch,
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
             
           
         
@@ -5097,15 +5498,8 @@ datasets. Our code and data are publicly available in
           
           
             
-              Stephen Casper,
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
             
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
           
         
       
@@ -5114,7 +5508,7 @@ datasets. Our code and data are publicly available in
           
           
             
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
             
           
         
@@ -5124,7 +5518,7 @@ datasets. Our code and data are publicly available in
     
     <span class="periodical">
     
-      <em>In Proceedings of the Second Workshop on NLP for Conversational AI (NLP4ConvAI)</em>
+      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
     
     
       2020
@@ -5142,12 +5536,16 @@ datasets. Our code and data are publicly available in
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/nlp4convai2020.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/acl2020.pdf" target="_blank">PDF</a>]
   
   
   
   
   
+    [<a href="https://github.com/johnmwu/contextual-corr-analysis" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2005.01172" target="_blank">Arxiv</a>]
   
   
    
@@ -5157,7 +5555,7 @@ datasets. Our code and data are publicly available in
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>The predominant approach to open-domain dialog generation relies on end-to-end training of neural models on chat datasets. However, this approach provides little insight as to what these models learn (or do not learn) about engaging in dialog. In this study, we analyze the internal representations learned by neural open-domain dialog systems and evaluate the quality of these representations for learning basic conversational skills. Our results suggest that standard open-domain dialog systems struggle with answering questions, inferring contradiction, and determining the topic of conversation, among other tasks. We also find that the dyadic, turn-taking nature of dialog is not fully leveraged by these models. By exploring these limitations, we highlight the need for additional research into architectures and training methods that can better capture high-level information about dialog.</p>
+    <p>This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from  vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation.  The analysis reveals that  models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures  have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.</p>
   </span>
   
 </div>
