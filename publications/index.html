@@ -423,81 +423,6 @@
 </li>
 <li>
 
-<div id="katz:backward">
-  
-    <span class="title">Backward Lens: Projecting Language Model Gradients into the Vocabulary Space.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Shachar Katz,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              Mor Geva,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Lior Wolf
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2402.12865" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
 <div id="elazar2022">
   
     <span class="title">Measuring Causal Effects of Data Statistics on Language Model’s ‘Factual’ Predictions.</span>
@@ -1022,6 +947,91 @@
 </div>
 </li>
 <li>
+  <abbr>[EMNLP]</abbr>
+
+
+<div id="rahamim:2024:emnlp">
+  
+    <span class="title">Fast Forwarding Low-Rank Training.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Adir Rahamim,
+            
+          
+        
+      
+        
+          
+          
+            
+              Naomi Saphra,
+            
+          
+        
+      
+        
+          
+          
+            
+              Sara Kangaslahti,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2409.04206" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Parameter efficient finetuning methods like low-rank adaptation (LoRA) aim to reduce the computational costs of finetuning pretrained Language Models (LMs). Enabled by these low-rank settings, we propose an even more efficient optimization strategy: Fast Forward, a simple and effective approach to accelerate large segments of SGD training. In a Fast Forward stage, we repeat the most recent optimizer step until the loss stops improving on a tiny validation set. By alternating between regular optimization steps and Fast Forward stages, Fast Forward provides up to an 87% reduction in FLOPs over standard SGD with Adam. We validate Fast Forward by finetuning various models on different tasks and demonstrate that it speeds up training without compromising model performance. Additionally, we analyze when and how to apply Fast Forward.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[RepL4NLP]</abbr>
 
 
@@ -1084,6 +1094,102 @@
   
   <span class="abstract hidden">
     <p>Common methods for mitigating spurious correlations in natural language understanding (NLU) usually operate in the output space, encouraging a main model to behave differently from a bias model by down-weighing examples where the bias model is confident. While improving out of distribution (OOD) performance, it was recently observed that the internal representations of the presumably debiased models are actually more, rather than less biased. We propose SimgReg, a new method for debiasing internal model components via similarity-based regularization, in representation space: We encourage the model to learn representations that are either similar to an unbiased model or different from a biased model. We experiment with three NLU tasks and different kinds of biases. We find that SimReg improves OOD performance, with little in-distribution degradation. Moreover, the representations learned by SimReg are less biased than in other methods.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
+<div id="toker:acl:2024">
+  
+    <span class="title">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Michael Toker,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Mor Ventura,
+            
+          
+        
+      
+        
+          
+          
+            
+              Dana Arad,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2403.05846" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Text-to-image diffusion models (T2I) use a latent representation of a text prompt to guide the image generation process. However, the process by which the encoder produces the text representation is unknown. We propose the Diffusion Lens, a method for analyzing the text encoder of T2I models by generating images from its intermediate representations. Using the Diffusion Lens, we perform an extensive analysis of two recent T2I models. Exploring compound prompts, we find that complex scenes describing multiple objects are composed progressively and more slowly compared to simple scenes; Exploring knowledge retrieval, we find that representation of uncommon concepts require further computation compared to common concepts, and that knowledge retrieval is gradual across layers. Overall, our findings provide valuable insights into the text encoder component in T2I pipelines.</p>
   </span>
   
 </div>
@@ -2046,19 +2152,19 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
 </div>
 </li>
 <li>
-  <abbr>[ACL]</abbr>
+  <abbr>[EMNLP]</abbr>
 
 
-<div id="toker:acl:2024">
+<div id="katz:2024:emnlp">
   
-    <span class="title">Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines.</span>
+    <span class="title">Backward Lens: Projecting Language Model Gradients into the Vocabulary Space.</span>
     <span class="author">
       
         
           
           
             
-              Michael Toker,
+              Shachar Katz,
             
           
         
@@ -2066,9 +2172,7 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
         
           
           
-            
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
-            
+            <em>Yonatan Belinkov</em>,
           
         
       
@@ -2076,16 +2180,7 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
           
           
             
-              Mor Ventura,
-            
-          
-        
-      
-        
-          
-          
-            
-              Dana Arad,
+              Mor Geva,
             
           
         
@@ -2094,7 +2189,9 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
           
           
           
-            <em>Yonatan Belinkov</em>
+            
+              Lior Wolf
+            
           
         
       
@@ -2102,8 +2199,6 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
 
     
     <span class="periodical">
-    
-      <em>In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
     
     
       2024
@@ -2126,7 +2221,7 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   
   
   
-    [<a href="https://arxiv.org/abs/2403.05846" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2402.12865" target="_blank">Arxiv</a>]
   
   
    
@@ -2136,7 +2231,7 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Text-to-image diffusion models (T2I) use a latent representation of a text prompt to guide the image generation process. However, the process by which the encoder produces the text representation is unknown. We propose the Diffusion Lens, a method for analyzing the text encoder of T2I models by generating images from its intermediate representations. Using the Diffusion Lens, we perform an extensive analysis of two recent T2I models. Exploring compound prompts, we find that complex scenes describing multiple objects are composed progressively and more slowly compared to simple scenes; Exploring knowledge retrieval, we find that representation of uncommon concepts require further computation compared to common concepts, and that knowledge retrieval is gradual across layers. Overall, our findings provide valuable insights into the text encoder component in T2I pipelines.</p>
+    <p>Understanding how Transformer-based Language Models (LMs) learn and recall information is a key goal of the deep learning community. Recent interpretability methods project weights and hidden states obtained from the forward pass to the models’ vocabularies, helping to uncover how information flows within LMs. In this work, we extend this methodology to LMs’ backward pass and gradients. We first prove that a gradient matrix can be cast as a low-rank linear combination of its forward and backward passes’ inputs. We then develop methods to project these gradients into vocabulary items and explore the mechanics of how new information is stored in the LMs’ neurons.</p>
   </span>
   
 </div>
@@ -3513,19 +3608,19 @@ Iterative Gradient-Based Projection.</span>
 </div>
 </li>
 <li>
-  <abbr>[NAACL]</abbr>
+  <abbr>[*SEM]</abbr>
 
 
-<div id="orgad:2022:NAACL">
+<div id="asael:2022:starsem">
   
-    <span class="title">How Gender Debiasing Affects Internal Model Representations, and Why It Matters.</span>
+    <span class="title">A Generative Approach for Mitigating Structural Biases in Natural Language Inference.</span>
     <span class="author">
       
         
           
           
             
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+              Dimion Asael,
             
           
         
@@ -3534,7 +3629,7 @@ Iterative Gradient-Based Projection.</span>
           
           
             
-              Seraphina Goldfarb-Tarrant,
+              Zachary Ziegler,
             
           
         
@@ -3552,7 +3647,7 @@ Iterative Gradient-Based Projection.</span>
     
     <span class="periodical">
     
-      <em>In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
+      <em>In Proceedings of the Eleventh Joint Conference on Lexical and Computational Semantics (*SEM)</em>
     
     
       2022
@@ -3570,16 +3665,16 @@ Iterative Gradient-Based Projection.</span>
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/naacl2022.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/starsem2022.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/technion-cs-nlp/gender_internal" target="_blank">Code</a>]
+    [<a href="https://github.com/technion-cs-nlp/Generative-NLI" target="_blank">Code</a>]
   
   
-    [<a href="https://arxiv.org/abs/2204.06827" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2108.14006" target="_blank">Arxiv</a>]
   
   
    
@@ -3589,7 +3684,7 @@ Iterative Gradient-Based Projection.</span>
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together: we debias a model during downstream fine-tuning, which reduces extrinsic bias, and measure the effect on intrinsic bias, which is operationalized as bias extractability with information-theoretic probing. Through experiments on two tasks and multiple bias metrics, we show that our intrinsic bias metric is a better indicator of debiasing than (a contextual adaptation of) the standard WEAT metric, and can also expose cases of superficial debiasing. Our framework provides a comprehensive perspective on bias in NLP models, which can be applied to deploy NLP systems in a more informed manner. Our code will be made publicly available.</p>
+    <p>Many natural language inference (NLI) datasets contain biases that allow models to perform well by only using a biased subset of the input, without considering the remainder features. For instance, models are able to classify samples by only using the hypothesis, without learning the true relationship between it and the premise. These structural biases lead discriminative models to learn unintended superficial features and generalize poorly out of the training distribution. In this work, we reformulate NLI as a generative task, where a model is conditioned on the biased subset of the input and the label and generates the remaining subset of the input. We show that by imposing a uniform prior, we obtain a provably unbiased model. Through synthetic experiments, we find this approach to be highly robust to large amounts of bias. We then demonstrate empirically on two types of natural bias that this approach leads to fully unbiased models in practice. However, we find that generative models are difficult to train and generally perform worse than discriminative baselines. We highlight the difficulty of the generative modeling task in the context of NLI as a cause for this worse performance. Finally, by fine-tuning the generative model with a discriminative objective, we reduce the performance gap between the generative model and the discriminative baseline, while allowing for a small amount of bias.</p>
   </span>
   
 </div>
@@ -3747,19 +3842,19 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
-  <abbr>[*SEM]</abbr>
+  <abbr>[NAACL]</abbr>
 
 
-<div id="asael:2022:starsem">
+<div id="orgad:2022:NAACL">
   
-    <span class="title">A Generative Approach for Mitigating Structural Biases in Natural Language Inference.</span>
+    <span class="title">How Gender Debiasing Affects Internal Model Representations, and Why It Matters.</span>
     <span class="author">
       
         
           
           
             
-              Dimion Asael,
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
             
           
         
@@ -3768,7 +3863,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
             
-              Zachary Ziegler,
+              Seraphina Goldfarb-Tarrant,
             
           
         
@@ -3786,7 +3881,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     
     <span class="periodical">
     
-      <em>In Proceedings of the Eleventh Joint Conference on Lexical and Computational Semantics (*SEM)</em>
+      <em>In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
     
     
       2022
@@ -3804,16 +3899,16 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/starsem2022.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/naacl2022.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/technion-cs-nlp/Generative-NLI" target="_blank">Code</a>]
+    [<a href="https://github.com/technion-cs-nlp/gender_internal" target="_blank">Code</a>]
   
   
-    [<a href="https://arxiv.org/abs/2108.14006" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2204.06827" target="_blank">Arxiv</a>]
   
   
    
@@ -3823,7 +3918,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Many natural language inference (NLI) datasets contain biases that allow models to perform well by only using a biased subset of the input, without considering the remainder features. For instance, models are able to classify samples by only using the hypothesis, without learning the true relationship between it and the premise. These structural biases lead discriminative models to learn unintended superficial features and generalize poorly out of the training distribution. In this work, we reformulate NLI as a generative task, where a model is conditioned on the biased subset of the input and the label and generates the remaining subset of the input. We show that by imposing a uniform prior, we obtain a provably unbiased model. Through synthetic experiments, we find this approach to be highly robust to large amounts of bias. We then demonstrate empirically on two types of natural bias that this approach leads to fully unbiased models in practice. However, we find that generative models are difficult to train and generally perform worse than discriminative baselines. We highlight the difficulty of the generative modeling task in the context of NLI as a cause for this worse performance. Finally, by fine-tuning the generative model with a discriminative objective, we reduce the performance gap between the generative model and the discriminative baseline, while allowing for a small amount of bias.</p>
+    <p>Common studies of gender bias in NLP focus either on extrinsic bias measured by model performance on a downstream task or on intrinsic bias found in models’ internal representations. However, the relationship between extrinsic and intrinsic bias is relatively unknown. In this work, we illuminate this relationship by measuring both quantities together: we debias a model during downstream fine-tuning, which reduces extrinsic bias, and measure the effect on intrinsic bias, which is operationalized as bias extractability with information-theoretic probing. Through experiments on two tasks and multiple bias metrics, we show that our intrinsic bias metric is a better indicator of debiasing than (a contextual adaptation of) the standard WEAT metric, and can also expose cases of superficial debiasing. Our framework provides a comprehensive perspective on bias in NLP models, which can be applied to deploy NLP systems in a more informed manner. Our code will be made publicly available.</p>
   </span>
   
 </div>
@@ -4448,6 +4543,88 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <abbr>[ICLR]</abbr>
 
 
+<div id="mahabadi:2021:iclr">
+  
+    <span class="title">Variational Information Bottleneck for Effective Low-Resource Fine-Tuning.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Rabeeh Karimi Mahabadi,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              James Henderson
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2021
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2021-vib.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/rabeehk/vibert" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2106.05469" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>While large-scale pretrained language models have obtained impressive results when fine-tuned on a wide variety of tasks, they still often suffer from overfitting in low-resource scenarios. Since such models are general-purpose feature extractors, many of these features are inevitably irrelevant for a given target task.  We propose to use Variational Information Bottleneck (VIB) to suppress irrelevant features when fine-tuning on low-resource target tasks, and show that our method successfully reduces overfitting.  Moreover, we show that our VIB model finds sentence representations that are more robust to biases in natural language inference datasets, and thereby obtains better generalization to out-of-domain datasets. Evaluation on seven low-resource datasets in different tasks shows that our method significantly improves transfer learning in low-resource scenarios, surpassing prior work. Moreover, it improves generalization on 13 out of 15 out-of-domain natural language inference benchmarks.  Our code is publicly available in https://github.com/rabeehk/vibert.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
 <div id="sanh:2021:iclr">
   
     <span class="title">Learning from others’ mistakes: Avoiding dataset biases without modeling them.</span>
@@ -4529,88 +4706,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   
   <span class="abstract hidden">
     <p>State-of-the-art natural language processing (NLP) models often learn to model dataset biases and surface form correlations instead of features that target the intended underlying task. Previous work has demonstrated effective methods to circumvent these issues when knowledge of the bias is available. We consider cases where the bias issues may not be explicitly identified, and show a method for training models that learn to ignore these problematic correlations. Our approach relies on the observation that models with limited capacity primarily learn to exploit biases in the dataset. We can leverage the errors of such limited capacity models to train a more robust model in a product of experts, thus bypassing the need to hand-craft a biased model. We show the effectiveness of this method to retain improvements in out-of-distribution settings even if no particular bias is targeted by the biased model.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="mahabadi:2021:iclr">
-  
-    <span class="title">Variational Information Bottleneck for Effective Low-Resource Fine-Tuning.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Rabeeh Karimi Mahabadi,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              James Henderson
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2021
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2021-vib.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/rabeehk/vibert" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/2106.05469" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>While large-scale pretrained language models have obtained impressive results when fine-tuned on a wide variety of tasks, they still often suffer from overfitting in low-resource scenarios. Since such models are general-purpose feature extractors, many of these features are inevitably irrelevant for a given target task.  We propose to use Variational Information Bottleneck (VIB) to suppress irrelevant features when fine-tuning on low-resource target tasks, and show that our method successfully reduces overfitting.  Moreover, we show that our VIB model finds sentence representations that are more robust to biases in natural language inference datasets, and thereby obtains better generalization to out-of-domain datasets. Evaluation on seven low-resource datasets in different tasks shows that our method significantly improves transfer learning in low-resource scenarios, surpassing prior work. Moreover, it improves generalization on 13 out of 15 out-of-domain natural language inference benchmarks.  Our code is publicly available in https://github.com/rabeehk/vibert.</p>
   </span>
   
 </div>
@@ -4813,95 +4908,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
-  <abbr>[EMNLP]</abbr>
-
-
-<div id="dalvi:2020:emnlp">
-  
-    <span class="title">Analyzing Redundancy in Pretrained Transformer Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/emnlp2020-redundancy.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2004.04010" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as: i) 85% of the neurons across the network are redundant and ii) at least 92% of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97% performance while using at-most 10% of the original neurons.</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[WMT]</abbr>
 
 
@@ -5066,6 +5072,95 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <abbr>[EMNLP]</abbr>
 
 
+<div id="dalvi:2020:emnlp">
+  
+    <span class="title">Analyzing Redundancy in Pretrained Transformer Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/emnlp2020-redundancy.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2004.04010" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as: i) 85% of the neurons across the network are redundant and ii) at least 92% of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97% performance while using at-most 10% of the original neurons.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[EMNLP]</abbr>
+
+
 <div id="durrani:2020:emnlp">
   
     <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
@@ -5152,17 +5247,35 @@ In this position paper, we assess the current paradigm of gender bias evaluation
 </div>
 </li>
 <li>
+  <abbr>[ACL]</abbr>
 
-<div id="saleh:2020">
+
+<div id="wu:2020:acl">
   
-    <span class="title">Probing Neural Dialog Models for Conversational Understanding.</span>
+    <span class="title">Similarity Analysis of Contextual Word Representation Models.</span>
     <span class="author">
       
         
           
           
             
-              Abdelrhman Saleh,
+              John M. Wu*,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov*</em>,
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
             
           
         
@@ -5171,7 +5284,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
             
-              Tovly Deutsch,
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
             
           
         
@@ -5180,15 +5293,8 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
             
-              Stephen Casper,
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
             
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
           
         
       
@@ -5197,7 +5303,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
           
           
             
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
             
           
         
@@ -5207,7 +5313,7 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     
     <span class="periodical">
     
-      <em>In Proceedings of the Second Workshop on NLP for Conversational AI (NLP4ConvAI)</em>
+      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
     
     
       2020
@@ -5225,12 +5331,16 @@ In this position paper, we assess the current paradigm of gender bias evaluation
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/nlp4convai2020.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/acl2020.pdf" target="_blank">PDF</a>]
   
   
   
   
   
+    [<a href="https://github.com/johnmwu/contextual-corr-analysis" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2005.01172" target="_blank">Arxiv</a>]
   
   
    
@@ -5240,7 +5350,105 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>The predominant approach to open-domain dialog generation relies on end-to-end training of neural models on chat datasets. However, this approach provides little insight as to what these models learn (or do not learn) about engaging in dialog. In this study, we analyze the internal representations learned by neural open-domain dialog systems and evaluate the quality of these representations for learning basic conversational skills. Our results suggest that standard open-domain dialog systems struggle with answering questions, inferring contradiction, and determining the topic of conversation, among other tasks. We also find that the dyadic, turn-taking nature of dialog is not fully leveraged by these models. By exploring these limitations, we highlight the need for additional research into architectures and training methods that can better capture high-level information about dialog.</p>
+    <p>This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from  vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation.  The analysis reveals that  models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures  have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
+<div id="Mahabadi:2020:acl">
+  
+    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Rabeeh Karimi Mahabadi,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              James Henderson
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
+  
+  
+    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Several recent studies have shown that strong natural language understanding
+(NLU) models are prone to relying on unwanted dataset biases without learning
+the underlying task, resulting in models that fail to generalize to
+out-of-domain datasets and are likely to perform poorly in real-world
+scenarios. We propose two learning strategies to train neural models, which are
+more robust to such biases and transfer better to out-of-domain datasets. The
+biases are specified in terms of one or more bias-only models, which learn to
+leverage the dataset biases. During training, the bias-only models’ predictions
+are used to adjust the loss of the base model to reduce its reliance on biases
+by down-weighting the biased examples and focusing the training on the hard
+examples. We experiment on large-scale natural language inference and fact
+verification benchmarks, evaluating on out-of-domain datasets that are
+specifically designed to assess the robustness of models against known biases
+in the training data. Results show that our debiasing methods greatly improve
+robustness in all settings and better transfer to other textual entailment
+datasets. Our code and data are publicly available in
+\urlhttps://github.com/rabeehk/robust-nli.</p>
   </span>
   
 </div>
@@ -5354,19 +5562,35 @@ Overall, humans are correct more often than out-of-the-box models, and the model
 </div>
 </li>
 <li>
-  <abbr>[ACL]</abbr>
 
-
-<div id="Mahabadi:2020:acl">
+<div id="saleh:2020">
   
-    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
+    <span class="title">Probing Neural Dialog Models for Conversational Understanding.</span>
     <span class="author">
       
         
           
           
             
-              Rabeeh Karimi Mahabadi,
+              Abdelrhman Saleh,
+            
+          
+        
+      
+        
+          
+          
+            
+              Tovly Deutsch,
+            
+          
+        
+      
+        
+          
+          
+            
+              Stephen Casper,
             
           
         
@@ -5383,7 +5607,7 @@ Overall, humans are correct more often than out-of-the-box models, and the model
           
           
             
-              James Henderson
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
             
           
         
@@ -5393,7 +5617,7 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     
     <span class="periodical">
     
-      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+      <em>In Proceedings of the Second Workshop on NLP for Conversational AI (NLP4ConvAI)</em>
     
     
       2020
@@ -5411,16 +5635,12 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/nlp4convai2020.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
   
   
    
@@ -5430,132 +5650,7 @@ Overall, humans are correct more often than out-of-the-box models, and the model
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Several recent studies have shown that strong natural language understanding
-(NLU) models are prone to relying on unwanted dataset biases without learning
-the underlying task, resulting in models that fail to generalize to
-out-of-domain datasets and are likely to perform poorly in real-world
-scenarios. We propose two learning strategies to train neural models, which are
-more robust to such biases and transfer better to out-of-domain datasets. The
-biases are specified in terms of one or more bias-only models, which learn to
-leverage the dataset biases. During training, the bias-only models’ predictions
-are used to adjust the loss of the base model to reduce its reliance on biases
-by down-weighting the biased examples and focusing the training on the hard
-examples. We experiment on large-scale natural language inference and fact
-verification benchmarks, evaluating on out-of-domain datasets that are
-specifically designed to assess the robustness of models against known biases
-in the training data. Results show that our debiasing methods greatly improve
-robustness in all settings and better transfer to other textual entailment
-datasets. Our code and data are publicly available in
-\urlhttps://github.com/rabeehk/robust-nli.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ACL]</abbr>
-
-
-<div id="wu:2020:acl">
-  
-    <span class="title">Similarity Analysis of Contextual Word Representation Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              John M. Wu*,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov*</em>,
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2020.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/johnmwu/contextual-corr-analysis" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/2005.01172" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from  vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation.  The analysis reveals that  models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures  have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.</p>
+    <p>The predominant approach to open-domain dialog generation relies on end-to-end training of neural models on chat datasets. However, this approach provides little insight as to what these models learn (or do not learn) about engaging in dialog. In this study, we analyze the internal representations learned by neural open-domain dialog systems and evaluate the quality of these representations for learning basic conversational skills. Our results suggest that standard open-domain dialog systems struggle with answering questions, inferring contradiction, and determining the topic of conversation, among other tasks. We also find that the dyadic, turn-taking nature of dialog is not fully leveraged by these models. By exploring these limitations, we highlight the need for additional research into architectures and training methods that can better capture high-level information about dialog.</p>
   </span>
   
 </div>
@@ -5831,93 +5926,6 @@ datasets. Our code and data are publicly available in
 </div>
 </li>
 <li>
-
-<div id="suzgun:2019:delfol">
-  
-    <span class="title">LSTM Networks Can Perform Dynamic Counting.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Mirac Suzgun,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://www.sebastiangehrmann.com" target="_blank">Sebastian Gehrmann</a>,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the First Workshop on Deep Learning and Formal Languages: Building Bridges</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/delfol2019.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/1906.03648" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>In this paper, we systematically assess the ability of standard recurrent networks to perform dynamic counting and to encode hierarchical representations. All the neural models in our experiments are designed to be small-sized networks both to prevent them from memorizing the training sets and to visualize and interpret their behaviour at test time. Our results demonstrate that the Long Short-Term Memory (LSTM) networks can learn to recognize the well-balanced parenthesis language (Dyck-1) and the shuffles of multiple Dyck-1 languages, each defined over different parenthesis-pairs, by emulating simple real-time k-counter machines. To the best of our knowledge, this work is the first study to introduce the shuffle languages to analyze the computational power of neural networks. We also show that a single-layer LSTM with only one hidden unit is practically sufficient for recognizing the Dyck-1 language. However, none of our recurrent networks was able to yield a good performance on the Dyck-2 language learning task, which requires a model to have a stack-like mechanism for</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[Blackbox]</abbr>
 
 
@@ -6132,6 +6140,182 @@ datasets. Our code and data are publicly available in
 </div>
 </li>
 <li>
+
+<div id="suzgun:2019:delfol">
+  
+    <span class="title">LSTM Networks Can Perform Dynamic Counting.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Mirac Suzgun,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://www.sebastiangehrmann.com" target="_blank">Sebastian Gehrmann</a>,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart Shieber</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the First Workshop on Deep Learning and Formal Languages: Building Bridges</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/delfol2019.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/1906.03648" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>In this paper, we systematically assess the ability of standard recurrent networks to perform dynamic counting and to encode hierarchical representations. All the neural models in our experiments are designed to be small-sized networks both to prevent them from memorizing the training sets and to visualize and interpret their behaviour at test time. Our results demonstrate that the Long Short-Term Memory (LSTM) networks can learn to recognize the well-balanced parenthesis language (Dyck-1) and the shuffles of multiple Dyck-1 languages, each defined over different parenthesis-pairs, by emulating simple real-time k-counter machines. To the best of our knowledge, this work is the first study to introduce the shuffle languages to analyze the computational power of neural networks. We also show that a single-layer LSTM with only one hidden unit is practically sufficient for recognizing the Dyck-1 language. However, none of our recurrent networks was able to yield a good performance on the Dyck-2 language learning task, which requires a model to have a stack-like mechanism for</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
+<div id="luo:2019:acl">
+  
+    <span class="title">Improving Neural Language Models by Segmenting, Attending, and Predicting the Future.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Hongyin Luo,
+            
+          
+        
+      
+        
+          
+          
+            
+              Lan Jiang,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2019-lm.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/1906.01702" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Common language models typically predict the next word given the context. In this work, we propose a method that improves language modeling by learning to align the given context and the following phrase. The model does not require any linguistic annotation of phrase segmentation. Instead, we define syntactic heights and phrase segmentation rules, enabling the model to automatically induce phrases, recognize their task-specific heads, and generate phrase embeddings in an unsupervised learning manner. Our method can easily be applied to language models with different network architectures since an independent module is used for phrase induction and context-phrase alignment, and no change is required in the underlying language modeling network. Experiments have shown that our model outperformed several strong baseline models on different data sets. We achieved a new state-of-the-art performance of 17.4 perplexity on the Wikitext-103 dataset. Additionally, visualizing the outputs of the phrase induction module showed that our model is able to learn approximate phrase-level structural knowledge without any annotation.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[CogSci]</abbr>
 
 
@@ -6327,95 +6511,6 @@ datasets. Our code and data are publicly available in
 </div>
 </li>
 <li>
-  <abbr>[ACL]</abbr>
-
-
-<div id="luo:2019:acl">
-  
-    <span class="title">Improving Neural Language Models by Segmenting, Attending, and Predicting the Future.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Hongyin Luo,
-            
-          
-        
-      
-        
-          
-          
-            
-              Lan Jiang,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2019-lm.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/1906.01702" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Common language models typically predict the next word given the context. In this work, we propose a method that improves language modeling by learning to align the given context and the following phrase. The model does not require any linguistic annotation of phrase segmentation. Instead, we define syntactic heights and phrase segmentation rules, enabling the model to automatically induce phrases, recognize their task-specific heads, and generate phrase embeddings in an unsupervised learning manner. Our method can easily be applied to language models with different network architectures since an independent module is used for phrase induction and context-phrase alignment, and no change is required in the underlying language modeling network. Experiments have shown that our model outperformed several strong baseline models on different data sets. We achieved a new state-of-the-art performance of 17.4 perplexity on the Wikitext-103 dataset. Additionally, visualizing the outputs of the phrase induction module showed that our model is able to learn approximate phrase-level structural knowledge without any annotation.</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[NAACL]</abbr>
 
 
@@ -6509,110 +6604,6 @@ datasets. Our code and data are publicly available in
   
   <span class="abstract hidden">
     <p>Contextual word representations derived from large-scale neural language models are successful across a diverse set of NLP tasks, suggesting that they encode useful and transferable features of language. To shed light on the linguistic knowledge they capture, we study the representations produced by several recent pretrained contextualizers (variants of ELMo, the OpenAI transformer LM, and BERT) with a suite of sixteen diverse probing tasks. We find that linear models trained on top of frozen contextual representations are competitive with state-of-the-art task-specific models in many cases, but fail on tasks requiring fine-grained linguistic knowledge (e.g., conjunct identification). To investigate the transferability of contextual word representations, we quantify differences in the transferability of individual layers within contextualizers, especially between RNNs and transformers. For instance, higher layers of RNNs are more task-specific, while transformer layers do not exhibit the same monotonic trend. In addition, to better understand what makes contextual word representations transferable, we compare language model pretraining with eleven supervised pretraining tasks. For any given task, pretraining on a closely related task yields better performance than language model pretraining (which is better on average) when the pretraining dataset is fixed. However, language model pretraining on more data gives the best results.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[*SEM]</abbr>
-
-
-<div id="belinkov:2019:starsem">
-  
-    <span class="title">On Adversarial Removal of Hypothesis-only Bias in Natural Language Inference.</span>
-    <span class="author">
-      
-        
-          
-          
-            <em>Yonatan Belinkov*</em>,
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://www.cs.jhu.edu/~apoliak1/" target="_blank">Adam Poliak*</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://www.cs.jhu.edu/~vandurme/index.html" target="_blank">Benjamin Van Durme</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Alexander M. Rush
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*SEM, Oral presentation)</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/starsem2019.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/starsem2019-slides.pdf" target="_blank">Slides</a>]
-  
-  
-    [<a href="https://github.com/azpoliak/robust-nli" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1907.04389" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-    [Media: <a href="https://www.seas.harvard.edu/news/2019/07/better-way-to-train-machine-learning-models" target="_blank">Havard News</a>, <a href="https://techxplore.com/news/2019-07-ai-human-bias.html" target="_blank">TechXplore</a>] 
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Popular Natural Language Inference (NLI) datasets have been shown to be tainted by hypothesis-only biases. Adversarial learning may help models ignore sensitive biases and spurious correlations in data. We evaluate whether adversarial learning can be used in NLI to encourage models to learn representations free of hypothesis-only biases. Our analyses indicate that the representations learned via adversarial learning may be less biased, with only small drops in NLI accuracy.</p>
   </span>
   
 </div>
@@ -6780,6 +6771,110 @@ datasets. Our code and data are publicly available in
   
   <span class="abstract hidden">
     <p>Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[*SEM]</abbr>
+
+
+<div id="belinkov:2019:starsem">
+  
+    <span class="title">On Adversarial Removal of Hypothesis-only Bias in Natural Language Inference.</span>
+    <span class="author">
+      
+        
+          
+          
+            <em>Yonatan Belinkov*</em>,
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://www.cs.jhu.edu/~apoliak1/" target="_blank">Adam Poliak*</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://www.cs.jhu.edu/~vandurme/index.html" target="_blank">Benjamin Van Durme</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Alexander M. Rush
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*SEM, Oral presentation)</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/starsem2019.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/starsem2019-slides.pdf" target="_blank">Slides</a>]
+  
+  
+    [<a href="https://github.com/azpoliak/robust-nli" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1907.04389" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+    [Media: <a href="https://www.seas.harvard.edu/news/2019/07/better-way-to-train-machine-learning-models" target="_blank">Havard News</a>, <a href="https://techxplore.com/news/2019-07-ai-human-bias.html" target="_blank">TechXplore</a>] 
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Popular Natural Language Inference (NLI) datasets have been shown to be tainted by hypothesis-only biases. Adversarial learning may help models ignore sensitive biases and spurious correlations in data. We evaluate whether adversarial learning can be used in NLI to encourage models to learn representations free of hypothesis-only biases. Our analyses indicate that the representations learned via adversarial learning may be less biased, with only small drops in NLI accuracy.</p>
   </span>
   
 </div>
@@ -6992,6 +7087,88 @@ datasets. Our code and data are publicly available in
   
   <span class="abstract hidden">
     <p>Arabic is a widely-spoken language with a long and rich history, but existing corpora and language technology focus mostly on modern Arabic and its varieties. Therefore, studying the history of the language has so far been mostly limited to manual analyses on a small scale. In this work, we present a large-scale historical corpus of the written Arabic language, spanning 1400 years. We describe our efforts to clean and process this corpus using Arabic NLP tools, including the identification of reused text. We study the history of the Arabic language using a novel automatic periodization algorithm, as well as other techniques. Our findings confirm the established division of written Arabic into Modern Standard and Classical Arabic, and confirm other established periodizations, while suggesting that written Arabic may be divisible into still further periods of development.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[SCiL]</abbr>
+
+
+<div id="suzgun:2019:SCiL">
+  
+    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Mirac Suzgun,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
   </span>
   
 </div>
@@ -7223,88 +7400,6 @@ datasets. Our code and data are publicly available in
   
   <span class="abstract hidden">
     <p>We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[SCiL]</abbr>
-
-
-<div id="suzgun:2019:SCiL">
-  
-    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Mirac Suzgun,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
   </span>
   
 </div>
@@ -8086,111 +8181,6 @@ In this work, we analyze the speech representations learned by a deep end-to-end
 </div>
 </li>
 <li>
-  <abbr>[Interspeech]</abbr>
-
-
-<div id="khurana:2017:interpseech">
-  
-    <span class="title">QMDIS: QCRI-MIT Advanced Dialect Identification System.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Sameer Khurana,
-            
-          
-        
-      
-        
-          
-          
-            
-              Maryam Najafian,
-            
-          
-        
-      
-        
-          
-          
-            
-              Ahmed Ali,
-            
-          
-        
-      
-        
-          
-          
-            
-              Tuka Al Hanai,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of Interspeech</em>
-    
-    
-      2017
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/interspeech2017.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>As a continuation of our efforts towards tackling the problem of spoken Dialect Identification (DID) for Arabic languages, we present the QCRI-MIT Advanced Dialect Identification System (QMDIS). QMDIS is an automatic spoken DID system for Dialectal Arabic (DA). In this paper, we report a comprehensive study of the three main components used in the spoken DID task: phonotactic, lexical and acoustic. We use Support Vector Machines (SVMs), Logistic Regression (LR) and Convolutional Neural Networks (CNNs) as backend classifiers throughout the study. We perform all our experiments on a publicly available dataset and present new state-of-the-art results. QMDIS discriminates between the five most widely used dialects of Arabic: namely Egyptian, Gulf, Levantine, North African, and Modern Standard Arabic (MSA). We report around 73% accuracy for system combination. All the data and the code used in our experiments are publicly available for research.</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[IPM]</abbr>
 
 
@@ -8318,6 +8308,111 @@ In this work, we analyze the speech representations learned by a deep end-to-end
   
   <span class="abstract hidden">
     <p>In this paper we focus on the problem of question ranking in community question answering (cQA) forums in Arabic. We address the task with machine learning algorithms using advanced Arabic text representations. The latter are obtained by applying tree kernels to constituency parse trees combined with textual similarities, including word embeddings. Our two main contributions are: (i) an Arabic language processing pipeline based on UIMA—from segmentation to constituency parsing—built on top of Farasa, a state-of-the-art Arabic language processing toolkit; and (ii) the application of long short-term memory neural networks to identify the best text fragments in questions to be used in our tree-kernel-based ranker. Our thorough experimentation on a recently released cQA dataset shows that the Arabic linguistic processing provided by Farasa produces strong results and that neural networks combined with tree kernels further boost the performance in terms of both efficiency and accuracy. Our approach also enables an implicit comparison between different processing pipelines as our tests on Farasa and Stanford parsers demonstrate.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[Interspeech]</abbr>
+
+
+<div id="khurana:2017:interpseech">
+  
+    <span class="title">QMDIS: QCRI-MIT Advanced Dialect Identification System.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Sameer Khurana,
+            
+          
+        
+      
+        
+          
+          
+            
+              Maryam Najafian,
+            
+          
+        
+      
+        
+          
+          
+            
+              Ahmed Ali,
+            
+          
+        
+      
+        
+          
+          
+            
+              Tuka Al Hanai,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of Interspeech</em>
+    
+    
+      2017
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/interspeech2017.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>As a continuation of our efforts towards tackling the problem of spoken Dialect Identification (DID) for Arabic languages, we present the QCRI-MIT Advanced Dialect Identification System (QMDIS). QMDIS is an automatic spoken DID system for Dialectal Arabic (DA). In this paper, we report a comprehensive study of the three main components used in the spoken DID task: phonotactic, lexical and acoustic. We use Support Vector Machines (SVMs), Logistic Regression (LR) and Convolutional Neural Networks (CNNs) as backend classifiers throughout the study. We perform all our experiments on a publicly available dataset and present new state-of-the-art results. QMDIS discriminates between the five most widely used dialects of Arabic: namely Egyptian, Gulf, Levantine, North African, and Modern Standard Arabic (MSA). We report around 73% accuracy for system combination. All the data and the code used in our experiments are publicly available for research.</p>
   </span>
   
 </div>
@@ -8637,9 +8732,9 @@ We propose a framework that facilitates better understanding of the encoded repr
 <h2 class="bibliography">2016</h2>
 <ol class="bibliography"><li>
 
-<div id="belinkov-glass:2016:VarDial">
+<div id="belinkov-EtAl:2016:LT4DH">
   
-    <span class="title">A Character-level Convolutional Neural Network for Distinguishing Similar Languages and Dialects.</span>
+    <span class="title">Shamela: A Large-Scale Historical Arabic Corpus.</span>
     <span class="author">
       
         
@@ -8652,9 +8747,36 @@ We propose a framework that facilitates better understanding of the encoded repr
         
           
           
+            
+              <a href="https://uri.academia.edu/AlexanderMagidow" target="_blank">Alexander Magidow</a>,
+            
+          
+        
+      
+        
+          
           
             
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+              <a href="https://alraqmiyyat.github.io" target="_blank">Maxim Romanov</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://biu.academia.edu/AviShmidman/" target="_blank">Avi Shmidman</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://u.cs.biu.ac.il/~koppel/" target="_blank">Moshe Koppel</a>
             
           
         
@@ -8664,7 +8786,7 @@ We propose a framework that facilitates better understanding of the encoded repr
     
     <span class="periodical">
     
-      <em>In Proceedings of the Third Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial at Coling)</em>
+      <em>In Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH at Coling)</em>
     
     
       2016
@@ -8682,18 +8804,16 @@ We propose a framework that facilitates better understanding of the encoded repr
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/vardial2016.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/lt4dh2016.pdf" target="_blank">PDF</a>]
   
   
   
-    [<a href="https://belinkov.com/assets/pdf/vardial2016-poster.pdf" target="_blank">Poster</a>]
+  
+    [<a href="https://belinkov.com/assets/pdf/lt4dh2016-slides.pdf" target="_blank">Slides</a>]
   
   
   
-    [<a href="https://github.com/boknilev/dsl-char-cnn" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1609.07568" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/1612.08989" target="_blank">Arxiv</a>]
   
   
    
@@ -8703,7 +8823,14 @@ We propose a framework that facilitates better understanding of the encoded repr
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Discriminating between closely-related language varieties is considered a challenging and important task. This paper describes our submission to the DSL 2016 shared-task, which included two sub-tasks: one on discriminating similar languages and one on identifying Arabic dialects. We developed a character-level neural network for this task. Given a sequence of characters, our model embeds each character in vector space, runs the sequence through multiple convolutions with different filter widths, and pools the convolutional representations to obtain a hidden vector representation of the text that is used for predicting the language or dialect. We primarily focused on the Arabic dialect identification task and obtained an F1 score of 0.4834, ranking 6th out of 18 participants. We also analyze errors made by our system on the Arabic data in some detail, and point to challenges such an approach is faced with.</p>
+    <p>Arabic is a widely-spoken language with a rich and long history spanning more
+	than fourteen centuries. Yet existing Arabic corpora largely focus on the
+	modern period or lack sufficient diachronic information. We develop a
+	large-scale, historical corpus of Arabic of about 1 billion words from diverse
+	periods of time. We clean this corpus, process it with a morphological
+	analyzer, and enhance it by detecting parallel passages and automatically
+	dating undated texts. We demonstrate its utility with selected case-studies in
+	which we show its application to the digital humanities.</p>
   </span>
   
 </div>
@@ -8855,9 +8982,9 @@ We propose a framework that facilitates better understanding of the encoded repr
 </li>
 <li>
 
-<div id="belinkov-EtAl:2016:LT4DH">
+<div id="belinkov-glass:2016:VarDial">
   
-    <span class="title">Shamela: A Large-Scale Historical Arabic Corpus.</span>
+    <span class="title">A Character-level Convolutional Neural Network for Distinguishing Similar Languages and Dialects.</span>
     <span class="author">
       
         
@@ -8870,36 +8997,9 @@ We propose a framework that facilitates better understanding of the encoded repr
         
           
           
-            
-              <a href="https://uri.academia.edu/AlexanderMagidow" target="_blank">Alexander Magidow</a>,
-            
-          
-        
-      
-        
-          
           
             
-              <a href="https://alraqmiyyat.github.io" target="_blank">Maxim Romanov</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://biu.academia.edu/AviShmidman/" target="_blank">Avi Shmidman</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://u.cs.biu.ac.il/~koppel/" target="_blank">Moshe Koppel</a>
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
             
           
         
@@ -8909,7 +9009,7 @@ We propose a framework that facilitates better understanding of the encoded repr
     
     <span class="periodical">
     
-      <em>In Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH at Coling)</em>
+      <em>In Proceedings of the Third Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial at Coling)</em>
     
     
       2016
@@ -8927,16 +9027,18 @@ We propose a framework that facilitates better understanding of the encoded repr
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/lt4dh2016.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/vardial2016.pdf" target="_blank">PDF</a>]
   
   
   
-  
-    [<a href="https://belinkov.com/assets/pdf/lt4dh2016-slides.pdf" target="_blank">Slides</a>]
-  
+    [<a href="https://belinkov.com/assets/pdf/vardial2016-poster.pdf" target="_blank">Poster</a>]
   
   
-    [<a href="https://arxiv.org/abs/1612.08989" target="_blank">Arxiv</a>]
+  
+    [<a href="https://github.com/boknilev/dsl-char-cnn" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1609.07568" target="_blank">Arxiv</a>]
   
   
    
@@ -8946,14 +9048,7 @@ We propose a framework that facilitates better understanding of the encoded repr
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Arabic is a widely-spoken language with a rich and long history spanning more
-	than fourteen centuries. Yet existing Arabic corpora largely focus on the
-	modern period or lack sufficient diachronic information. We develop a
-	large-scale, historical corpus of Arabic of about 1 billion words from diverse
-	periods of time. We clean this corpus, process it with a morphological
-	analyzer, and enhance it by detecting parallel passages and automatically
-	dating undated texts. We demonstrate its utility with selected case-studies in
-	which we show its application to the digital humanities.</p>
+    <p>Discriminating between closely-related language varieties is considered a challenging and important task. This paper describes our submission to the DSL 2016 shared-task, which included two sub-tasks: one on discriminating similar languages and one on identifying Arabic dialects. We developed a character-level neural network for this task. Given a sequence of characters, our model embeds each character in vector space, runs the sequence through multiple convolutions with different filter widths, and pools the convolutional representations to obtain a hidden vector representation of the text that is used for predicting the language or dialect. We primarily focused on the Arabic dialect identification task and obtained an F1 score of 0.4834, ranking 6th out of 18 participants. We also analyze errors made by our system on the Arabic data in some detail, and point to challenges such an approach is faced with.</p>
   </span>
   
 </div>
