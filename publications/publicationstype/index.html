@@ -1293,6 +1293,10 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 
   <span class="links">
   
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/sigir2025.pdf" target="_blank">PDF</a>]
   
   
   
@@ -1307,6 +1311,10 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   </span>
 
   <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Generative Information Retrieval (GenIR) is a novel paradigm in which a transformer encoder-decoder model predicts document rankings based on a query in an end-to-end fashion. These GenIR models have received significant attention due to their simple retrieval architecture while maintaining high retrieval effectiveness. However, in contrast to established retrieval architectures like cross-encoders or bi-encoders, their internal computations remain largely unknown. In this work, we investigate this retrieval mechanism and uncover the roles played by different model components (self-attention, cross-attention, MLPs) and their interaction to generate the document identifier. First, we show that the pre-trained encoder, which was not fine-tuned for retrieval, is sufficient for the retrieval process. Then, we find that the pass through the decoder can be divided into three stages: (I) the priming stage in which no component contributes query-specific information, (II) the bridging stage where cross-attention transfers query information from the encoder to the decoder, and (III) the interaction stage where MLPs process this transferred information to predict the document identifier in the last layer. Our results indicate that document-specific information is only stored in a few components in the final stage of the retrieval process. We hope that our findings will motivate the development of more effective GenIR models and facilitate their improvements.</p>
+  </span>
   
 </div>
 </li>
@@ -1428,305 +1436,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   <abbr>[ICLR]</abbr>
 
 
-<div id="carmeli:2025:iclr">
-  
-    <span class="title">CtD: Composition through Decomposition in Emergent Communication.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Boaz Carmeli,
-            
-          
-        
-      
-        
-          
-          
-            
-              Ron Meir,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2025-ctd" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Compositionality is a cognitive mechanism that allows humans to systematically combine known concepts in novel ways. This study demonstrates how artificial neural agents acquire and utilize compositional generalization to describe previously unseen images. Our method, termed “Composition through Decomposition”, involves two sequential training steps. In the ’Decompose’ step, the agents learn to decompose an image into basic concepts using a codebook acquired during interaction in a multi-target coordination game. Subsequently, in the ‘Compose’ step, the agents employ this codebook to describe novel images by composing basic concepts into complex phrases. Remarkably, we observe cases where generalization in the ‘Compose’ step is achieved zero-shot, without the need for additional training.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="marks:2025:iclr">
-  
-    <span class="title">Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Samuel Marks,
-            
-          
-        
-      
-        
-          
-          
-            
-              Can Rager,
-            
-          
-        
-      
-        
-          
-          
-            
-              Eric J. Michaud,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Aaron Mueller
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2025-sfc-poster.pdf" target="_blank">Poster</a>]
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2403.19647" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>We introduce methods for discovering and applying sparse feature circuits. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="orgad:2025:iclr">
-  
-    <span class="title">LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Michael Toker,
-            
-          
-        
-      
-        
-          
-          
-            
-              Zorik Gekhman,
-            
-          
-        
-      
-        
-          
-          
-            
-              Roi Reichart,
-            
-          
-        
-      
-        
-          
-          
-            
-              Idan Szpektor,
-            
-          
-        
-      
-        
-          
-          
-            
-              Hadas Kotek,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2410.02707" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Large language models (LLMs) often produce errors, including factual inaccuracies, biases, and reasoning failures, collectively referred to as "hallucinations". Recent studies have demonstrated that LLMs’ internal states encode information regarding the truthfulness of their outputs, and that this information can be utilized to detect errors. In this work, we show that the internal representations of LLMs encode much more information about truthfulness than previously recognized. We first discover that the truthfulness information is concentrated in specific tokens, and leveraging this property significantly enhances error detection performance. Yet, we show that such error detectors fail to generalize across datasets, implying that – contrary to prior claims – truthfulness encoding is not universal but rather multifaceted. Next, we show that internal representations can also be used for predicting the types of errors the model is likely to make, facilitating the development of tailored mitigation strategies. Lastly, we reveal a discrepancy between LLMs’ internal encoding and external behavior: they may encode the correct answer, yet consistently generate an incorrect one. Taken together, these insights deepen our understanding of LLM errors from the model’s internal perspective, which can guide future research on enhancing error analysis and mitigation.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
 <div id="nikankin:2025:iclr">
   
     <span class="title">Arithmetic Without Algorithms: Language Models Solve Math With a Bag of Heuristics.</span>
@@ -1790,6 +1499,8 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     [<a class="abstract">Abstract</a>]
   
   
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-math.pdf" target="_blank">PDF</a>]
+  
   
   
     [<a href="https://belinkov.com/assets/pdf/iclr2025-arithmetic-poster.pdf" target="_blank">Poster</a>]
@@ -1808,103 +1519,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Do large language models (LLMs) solve reasoning tasks by learning robust generalizable algorithms, or do they memorize training data? To investigate this question, we use arithmetic reasoning as a representative task. Using causal analysis, we identify a subset of the model (a circuit) that explains most of the model’s behavior for basic arithmetic logic and examine its functionality. By zooming in on the level of individual circuit neurons, we discover a sparse set of important neurons that implement simple heuristics. Each heuristic identifies a numerical input pattern and outputs corresponding answers. We hypothesize that the combination of these heuristic neurons is the mechanism used to produce correct arithmetic answers. To test this, we categorize each neuron into several heuristic types-such as neurons that activate when an operand falls within a certain range-and find that the unordered combination of these heuristic types is the mechanism that explains most of the model’s accuracy on arithmetic prompts. Finally, we demonstrate that this mechanism appears as the main source of arithmetic accuracy early in training. Overall, our experimental results across several LLMs show that LLMs perform arithmetic using neither robust algorithms nor memorization; rather, they rely on a "bag of heuristics".</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="wiegreffe:2025:iclr">
-  
-    <span class="title">Answer, Assemble, Ace: Understanding How Transformers Answer Multiple
-  Choice Question.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Sarah Wiegreffe,
-            
-          
-        
-      
-        
-          
-          
-            
-              Oyvind Tafjord,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              Hannaneh Hajishirzi,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Ashish Sabharwal
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2407.15018" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Multiple-choice question answering (MCQA) is a key competence of performant transformer language models that is tested by mainstream benchmarks. However, recent evidence shows that models can have quite a range of performance, particularly when the task format is diversified slightly (such as by shuffling answer choice order). In this work we ask: how do successful models perform formatted MCQA? We employ vocabulary projection and activation patching methods to localize key hidden states that encode relevant information for predicting the correct answer. We find that the prediction of a specific answer symbol is causally attributed to a few middle layers, and specifically their multi-head self-attention mechanisms. We show that subsequent layers increase the probability of the predicted answer symbol in vocabulary space, and that this probability increase is associated with a sparse set of attention heads with unique roles. We additionally uncover differences in how different models adjust to alternative symbols. Finally, we demonstrate that a synthetic task can disentangle sources of model error to pinpoint when a model has learned formatted MCQA, and show that logit differences between answer choice tokens continue to grow over the course of training.</p>
   </span>
   
 </div>
@@ -2508,6 +2122,406 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </div>
 </li>
 <li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="wiegreffe:2025:iclr">
+  
+    <span class="title">Answer, Assemble, Ace: Understanding How Transformers Answer Multiple
+  Choice Question.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Sarah Wiegreffe,
+            
+          
+        
+      
+        
+          
+          
+            
+              Oyvind Tafjord,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+            
+              Hannaneh Hajishirzi,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Ashish Sabharwal
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2407.15018" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Multiple-choice question answering (MCQA) is a key competence of performant transformer language models that is tested by mainstream benchmarks. However, recent evidence shows that models can have quite a range of performance, particularly when the task format is diversified slightly (such as by shuffling answer choice order). In this work we ask: how do successful models perform formatted MCQA? We employ vocabulary projection and activation patching methods to localize key hidden states that encode relevant information for predicting the correct answer. We find that the prediction of a specific answer symbol is causally attributed to a few middle layers, and specifically their multi-head self-attention mechanisms. We show that subsequent layers increase the probability of the predicted answer symbol in vocabulary space, and that this probability increase is associated with a sparse set of attention heads with unique roles. We additionally uncover differences in how different models adjust to alternative symbols. Finally, we demonstrate that a synthetic task can disentangle sources of model error to pinpoint when a model has learned formatted MCQA, and show that logit differences between answer choice tokens continue to grow over the course of training.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="orgad:2025:iclr">
+  
+    <span class="title">LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Michael Toker,
+            
+          
+        
+      
+        
+          
+          
+            
+              Zorik Gekhman,
+            
+          
+        
+      
+        
+          
+          
+            
+              Roi Reichart,
+            
+          
+        
+      
+        
+          
+          
+            
+              Idan Szpektor,
+            
+          
+        
+      
+        
+          
+          
+            
+              Hadas Kotek,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-know.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2410.02707" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Large language models (LLMs) often produce errors, including factual inaccuracies, biases, and reasoning failures, collectively referred to as "hallucinations". Recent studies have demonstrated that LLMs’ internal states encode information regarding the truthfulness of their outputs, and that this information can be utilized to detect errors. In this work, we show that the internal representations of LLMs encode much more information about truthfulness than previously recognized. We first discover that the truthfulness information is concentrated in specific tokens, and leveraging this property significantly enhances error detection performance. Yet, we show that such error detectors fail to generalize across datasets, implying that – contrary to prior claims – truthfulness encoding is not universal but rather multifaceted. Next, we show that internal representations can also be used for predicting the types of errors the model is likely to make, facilitating the development of tailored mitigation strategies. Lastly, we reveal a discrepancy between LLMs’ internal encoding and external behavior: they may encode the correct answer, yet consistently generate an incorrect one. Taken together, these insights deepen our understanding of LLM errors from the model’s internal perspective, which can guide future research on enhancing error analysis and mitigation.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="marks:2025:iclr">
+  
+    <span class="title">Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Samuel Marks,
+            
+          
+        
+      
+        
+          
+          
+            
+              Can Rager,
+            
+          
+        
+      
+        
+          
+          
+            
+              Eric J. Michaud,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Aaron Mueller
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-sfc.pdf" target="_blank">PDF</a>]
+  
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-sfc-poster.pdf" target="_blank">Poster</a>]
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2403.19647" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We introduce methods for discovering and applying sparse feature circuits. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="carmeli:2025:iclr">
+  
+    <span class="title">CtD: Composition through Decomposition in Emergent Communication.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Boaz Carmeli,
+            
+          
+        
+      
+        
+          
+          
+            
+              Ron Meir,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-ctd.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Compositionality is a cognitive mechanism that allows humans to systematically combine known concepts in novel ways. This study demonstrates how artificial neural agents acquire and utilize compositional generalization to describe previously unseen images. Our method, termed “Composition through Decomposition”, involves two sequential training steps. In the ’Decompose’ step, the agents learn to decompose an image into basic concepts using a codebook acquired during interaction in a multi-target coordination game. Subsequently, in the ‘Compose’ step, the agents employ this codebook to describe novel images by composing basic concepts into complex phrases. Remarkably, we observe cases where generalization in the ‘Compose’ step is achieved zero-shot, without the need for additional training.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[AAAI]</abbr>
 
 
@@ -2610,6 +2624,93 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Emergent Communication (EC) provides a unique window into the  language systems that emerge autonomously when agents are trained to jointly achieve shared goals. However, it is difficult to interpret EC and evaluate its relationship with natural languages (NL). This study employs unsupervised neural machine translation (UNMT) techniques to decipher ECs formed during referential games with varying task complexities, influenced by the semantic diversity of the environment. Our findings demonstrate UNMT’s potential to translate EC, illustrating that task complexity characterized by semantic diversity enhances EC translatability, while higher task complexity with constrained semantic variability exhibits pragmatic EC, which, although challenging to interpret, remains suitable for translation. This research marks the first attempt, to our knowledge, to translate EC without the aid of parallel data.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[NeurIPS]</abbr>
+
+
+<div id="benzion:2024:neurips">
+  
+    <span class="title">Semantics and Spatiality of Emergent Communication.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Rotem Ben Zion,
+            
+          
+        
+      
+        
+          
+          
+            
+              Boaz Carmeli,
+            
+          
+        
+      
+        
+          
+          
+            
+              Orr Paradise,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/neurips2025-comm.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>When artificial agents are jointly trained to perform collaborative tasks using a communication channel, they develop opaque goal-oriented communication protocols. Good task performance is often considered sufficient evidence that meaningful communication is taking place, but existing empirical results show that communication strategies induced by common objectives can be counterintuitive whilst solving the task nearly perfectly. In this work, we identify a goal-agnostic prerequisite to meaningful communication, which we term semantic consistency, based on the idea that messages should have similar meanings across instances. We provide a formal definition for this idea, and use it to compare the two most common objectives in the field of emergent communication: discrimination and reconstruction. We prove, under mild assumptions, that semantically inconsistent communication protocols can be optimal solutions to the discrimination task, but not to reconstruction. We further show that the reconstruction objective encourages a stricter property, spatial meaningfulness, which also accounts for the distance between messages. Experiments with emergent communication games validate our theoretical results. These findings demonstrate an inherent advantage of distance-based communication goals, and contextualize previous empirical discoveries.</p>
   </span>
   
 </div>
@@ -2722,93 +2823,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Despite their widespread use, the mechanisms by which large language models (LLMs) represent and regulate uncertainty in next-token predictions remain largely unexplored. This study investigates two critical components believed to influence this uncertainty: the recently discovered entropy neurons and a new set of components that we term token frequency neurons. Entropy neurons are characterized by an unusually high weight norm and influence the final layer normalization (LayerNorm) scale to effectively scale down the logits. Our work shows that entropy neurons operate by writing onto an \textitunembedding null space, allowing them to impact the residual stream norm with minimal direct effect on the logits themselves. We observe the presence of entropy neurons across a range of models, up to 7 billion parameters. On the other hand, token frequency neurons, which we discover and describe here for the first time, boost or suppress each token’s logit proportionally to its log frequency, thereby shifting the output distribution towards or away from the unigram distribution. Finally, we present a detailed case study where entropy neurons actively manage confidence: the setting of induction, i.e. detecting and continuing repeated subsequences.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[NeurIPS]</abbr>
-
-
-<div id="benzion:2024:neurips">
-  
-    <span class="title">Semantics and Spatiality of Emergent Communication.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Rotem Ben Zion,
-            
-          
-        
-      
-        
-          
-          
-            
-              Boaz Carmeli,
-            
-          
-        
-      
-        
-          
-          
-            
-              Orr Paradise,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>
-    
-    
-      2024
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/neurips2025-comm.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>When artificial agents are jointly trained to perform collaborative tasks using a communication channel, they develop opaque goal-oriented communication protocols. Good task performance is often considered sufficient evidence that meaningful communication is taking place, but existing empirical results show that communication strategies induced by common objectives can be counterintuitive whilst solving the task nearly perfectly. In this work, we identify a goal-agnostic prerequisite to meaningful communication, which we term semantic consistency, based on the idea that messages should have similar meanings across instances. We provide a formal definition for this idea, and use it to compare the two most common objectives in the field of emergent communication: discrimination and reconstruction. We prove, under mild assumptions, that semantically inconsistent communication protocols can be optimal solutions to the discrimination task, but not to reconstruction. We further show that the reconstruction objective encourages a stricter property, spatial meaningfulness, which also accounts for the distance between messages. Experiments with emergent communication games validate our theoretical results. These findings demonstrate an inherent advantage of distance-based communication goals, and contextualize previous empirical discoveries.</p>
   </span>
   
 </div>
@@ -3066,19 +3080,19 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </div>
 </li>
 <li>
-  <abbr>[NAACL]</abbr>
+  <abbr>[ACL]</abbr>
 
 
-<div id="iskander:2024:naacl">
+<div id="ashuach:2025">
   
-    <span class="title">Leveraging Prototypical Representations for Mitigating Social Bias without Demographic Information.</span>
+    <span class="title">REVS: Unlearning Sensitive Information in Language Models via Rank Editing in the Vocabulary Space.</span>
     <span class="author">
       
         
           
           
             
-              Shadi Iskander,
+              Tomer Ashuach,
             
           
         
@@ -3087,7 +3101,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              Kira Radinsky,
+              Martin Tutek,
             
           
         
@@ -3105,7 +3119,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     
     <span class="periodical">
     
-      <em>In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
+      <em>In Findings of the Association for Computational Linguistics (ACL)</em>
     
     
       2024
@@ -3120,19 +3134,13 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 
   <span class="links">
   
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/naacl2024-dafair.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/technion-cs-nlp/DAFair" target="_blank">Code</a>]
   
-  
-    [<a href="https://arxiv.org/abs/2403.09516" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2406.09325" target="_blank">Arxiv</a>]
   
   
    
@@ -3141,9 +3149,95 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 
   <!-- Hidden abstract block -->
   
-  <span class="abstract hidden">
-    <p>Mitigating social biases typically requires identifying the social groups associated with each data sample. In this paper, we present DAFair, a novel approach to address social bias in language models. Unlike traditional methods that rely on explicit demographic labels, our approach does not require any such information. Instead, we leverage predefined prototypical demographic texts and incorporate a regularization term during the fine-tuning process to mitigate bias in the model’s representations. Our empirical results across two tasks and two models demonstrate the effectiveness of our method compared to previous approaches that do not rely on labeled data. Moreover, with limited demographic-annotated data, our approach outperforms common debiasing approaches.</p>
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
+<div id="haklay:2025">
+  
+    <span class="title">Position-aware Automatic Circuit Discovery.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Tal Haklay,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Aaron Mueller,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2502.04577" target="_blank">Arxiv</a>]
+  
+  
+   
+  
   </span>
+
+  <!-- Hidden abstract block -->
   
 </div>
 </li>
@@ -3318,6 +3412,88 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Artificial agents that learn to communicate in order to accomplish a given task acquire communication protocols that are typically opaque to a human. A large body of work has attempted to evaluate the emergent communication via various evaluation measures, with <i>compositionality</i> featuring as a prominent desired trait. However, current evaluation procedures do not directly expose the compositionality of the emergent communication. We propose a procedure to assess the compositionality of emergent communication by finding the best-match between emerged words and natural language concepts. The best-match algorithm provides both a global score and a translation-map from emergent words to natural language concepts. To the best of our knowledge, it is the first time that such direct and interpretable mapping between emergent words and human concepts is provided.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[NAACL]</abbr>
+
+
+<div id="iskander:2024:naacl">
+  
+    <span class="title">Leveraging Prototypical Representations for Mitigating Social Bias without Demographic Information.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Shadi Iskander,
+            
+          
+        
+      
+        
+          
+          
+            
+              Kira Radinsky,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2024-dafair.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/DAFair" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2403.09516" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Mitigating social biases typically requires identifying the social groups associated with each data sample. In this paper, we present DAFair, a novel approach to address social bias in language models. Unlike traditional methods that rely on explicit demographic labels, our approach does not require any such information. Instead, we leverage predefined prototypical demographic texts and incorporate a regularization term during the fine-tuning process to mitigate bias in the model’s representations. Our empirical results across two tasks and two models demonstrate the effectiveness of our method compared to previous approaches that do not rely on labeled data. Moreover, with limited demographic-annotated data, our approach outperforms common debiasing approaches.</p>
   </span>
   
 </div>
@@ -8116,19 +8292,37 @@ Overall, humans are correct more often than out-of-the-box models, and the model
 </div>
 </li>
 <li>
-  <abbr>[SCiL]</abbr>
+  <abbr>[AAAI]</abbr>
 
 
-<div id="suzgun:2019:SCiL">
+<div id="dalvi:2019:AAAI:demo">
   
-    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
+    <span class="title">NeuroX: A Toolkit for Analyzing Individual Neurons in Neural Networks.</span>
     <span class="author">
       
         
           
           
             
-              Mirac Suzgun,
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Avery Nortonsmith,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">D. Anthony Bau</a>,
             
           
         
@@ -8143,9 +8337,27 @@ Overall, humans are correct more often than out-of-the-box models, and the model
         
           
           
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
           
             
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
             
           
         
@@ -8155,7 +8367,7 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     
     <span class="periodical">
     
-      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
+      <em>In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence (AAAI): Demonstrations Track</em>
     
     
       2019
@@ -8173,26 +8385,28 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/aaai2019-demo.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
+    [<a href="https://github.com/fdalvi/NeuroX" target="_blank">Code</a>]
   
   
-    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/1812.09359" target="_blank">Arxiv</a>]
   
   
    
+  
+    [Media: <a href="http://news.mit.edu/2019/neural-networks-nlp-microscope-0201" target="_blank">MIT News</a>, <a href="https://cacm.acm.org/news/234509-putting-neural-networks-under-the-microscope/fulltext" target="_blank">ACM Tech News</a>] 
   
   </span>
 
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
+    <p>We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.</p>
   </span>
   
 </div>
@@ -8309,37 +8523,19 @@ Overall, humans are correct more often than out-of-the-box models, and the model
 </div>
 </li>
 <li>
-  <abbr>[AAAI]</abbr>
+  <abbr>[SCiL]</abbr>
 
 
-<div id="dalvi:2019:AAAI:demo">
+<div id="suzgun:2019:SCiL">
   
-    <span class="title">NeuroX: A Toolkit for Analyzing Individual Neurons in Neural Networks.</span>
+    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
     <span class="author">
       
         
           
           
             
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Avery Nortonsmith,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">D. Anthony Bau</a>,
+              Mirac Suzgun,
             
           
         
@@ -8354,27 +8550,9 @@ Overall, humans are correct more often than out-of-the-box models, and the model
         
           
           
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
           
             
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
             
           
         
@@ -8384,7 +8562,7 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     
     <span class="periodical">
     
-      <em>In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence (AAAI): Demonstrations Track</em>
+      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
     
     
       2019
@@ -8402,28 +8580,26 @@ Overall, humans are correct more often than out-of-the-box models, and the model
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/aaai2019-demo.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/fdalvi/NeuroX" target="_blank">Code</a>]
+    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
   
   
-    [<a href="https://arxiv.org/abs/1812.09359" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
   
   
    
-  
-    [Media: <a href="http://news.mit.edu/2019/neural-networks-nlp-microscope-0201" target="_blank">MIT News</a>, <a href="https://cacm.acm.org/news/234509-putting-neural-networks-under-the-microscope/fulltext" target="_blank">ACM Tech News</a>] 
   
   </span>
 
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.</p>
+    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
   </span>
   
 </div>
@@ -11040,91 +11216,6 @@ We propose a framework that facilitates better understanding of the encoded repr
   <abbr>[EMNLP]</abbr>
 
 
-<div id="rahamim:2024:emnlp">
-  
-    <span class="title">Fast Forwarding Low-Rank Training.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Adir Rahamim,
-            
-          
-        
-      
-        
-          
-          
-            
-              Naomi Saphra,
-            
-          
-        
-      
-        
-          
-          
-            
-              Sara Kangaslahti,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-      2024
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2409.04206" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Parameter efficient finetuning methods like low-rank adaptation (LoRA) aim to reduce the computational costs of finetuning pretrained Language Models (LMs). Enabled by these low-rank settings, we propose an even more efficient optimization strategy: Fast Forward, a simple and effective approach to accelerate large segments of SGD training. In a Fast Forward stage, we repeat the most recent optimizer step until the loss stops improving on a tiny validation set. By alternating between regular optimization steps and Fast Forward stages, Fast Forward provides up to an 87% reduction in FLOPs over standard SGD with Adam. We validate Fast Forward by finetuning various models on different tasks and demonstrate that it speeds up training without compromising model performance. Additionally, we analyze when and how to apply Fast Forward.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[EMNLP]</abbr>
-
-
 <div id="katz:2024:emnlp">
   
     <span class="title">Backward Lens: Projecting Language Model Gradients into the Vocabulary Space.</span>
@@ -11206,6 +11297,91 @@ We propose a framework that facilitates better understanding of the encoded repr
   
   <span class="abstract hidden">
     <p>Understanding how Transformer-based Language Models (LMs) learn and recall information is a key goal of the deep learning community. Recent interpretability methods project weights and hidden states obtained from the forward pass to the models’ vocabularies, helping to uncover how information flows within LMs. In this work, we extend this methodology to LMs’ backward pass and gradients. We first prove that a gradient matrix can be cast as a low-rank linear combination of its forward and backward passes’ inputs. We then develop methods to project these gradients into vocabulary items and explore the mechanics of how new information is stored in the LMs’ neurons.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[EMNLP]</abbr>
+
+
+<div id="rahamim:2024:emnlp">
+  
+    <span class="title">Fast Forwarding Low-Rank Training.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Adir Rahamim,
+            
+          
+        
+      
+        
+          
+          
+            
+              Naomi Saphra,
+            
+          
+        
+      
+        
+          
+          
+            
+              Sara Kangaslahti,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2409.04206" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Parameter efficient finetuning methods like low-rank adaptation (LoRA) aim to reduce the computational costs of finetuning pretrained Language Models (LMs). Enabled by these low-rank settings, we propose an even more efficient optimization strategy: Fast Forward, a simple and effective approach to accelerate large segments of SGD training. In a Fast Forward stage, we repeat the most recent optimizer step until the loss stops improving on a tiny validation set. By alternating between regular optimization steps and Fast Forward stages, Fast Forward provides up to an 87% reduction in FLOPs over standard SGD with Adam. We validate Fast Forward by finetuning various models on different tasks and demonstrate that it speeds up training without compromising model performance. Additionally, we analyze when and how to apply Fast Forward.</p>
   </span>
   
 </div>
@@ -11679,156 +11855,6 @@ We propose a framework that facilitates better understanding of the encoded repr
   
   
     [<a href="https://arxiv.org/abs/2502.12964" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="haklay:peap">
-  
-    <span class="title">Position-aware Automatic Circuit Discovery.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Tal Haklay,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Aaron Mueller,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2502.04577" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="ashuach:revs">
-  
-    <span class="title">REVS: Unlearning Sensitive Information in Language Models via Rank Editing in the Vocabulary Space.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Tomer Ashuach,
-            
-          
-        
-      
-        
-          
-          
-            
-              Martin Tutek,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2406.09325" target="_blank">Arxiv</a>]
   
   
    
