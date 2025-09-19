@@ -172,6 +172,8 @@
     [<a class="abstract">Abstract</a>]
   
   
+    [<a href="https://belinkov.com/assets/pdf/cl2025-circuits.pdf" target="_blank">PDF</a>]
+  
   
   
   
@@ -306,6 +308,174 @@
   
   <span class="abstract hidden">
     <p>The multiple sequence alignment (MSA) problem is a fundamental pillar in bioinformatics, comparative genomics, and phylogenetics. Here we characterize and improve BetaAlign, the first deep learning aligner, which substantially deviates from conventional algorithms of alignment computation. BetaAlign draws on natural language processing (NLP) techniques and trains transformers to map a set of unaligned biological sequences to an MSA. We show that our approach is highly accurate, comparable and sometimes better than state-of-the-art alignment tools. We characterize the performance of BetaAlign and the effect of various aspects on accuracy; for example, the size of the training data, the effect of different transformer architectures, and the effect of learning on a subspace of indel-model parameters (subspace learning). We also introduce a new technique that leads to improved performance compared to our previous approach. Our findings further uncover the potential of NLP-based approaches for sequence alignment, highlighting that AI-based methodologies can substantially challenge classic tasks in phylogenomics and bioinformatics.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[CL]</abbr>
+
+
+<div id="mueller:mediator">
+  
+    <span class="title">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Jannik Brinkmann,
+            
+          
+        
+      
+        
+          
+          
+            
+              Millicent Li,
+            
+          
+        
+      
+        
+          
+          
+            
+              Samuel Marks,
+            
+          
+        
+      
+        
+          
+          
+            
+              Koyena Pal,
+            
+          
+        
+      
+        
+          
+          
+            
+              Nikhil Prakash,
+            
+          
+        
+      
+        
+          
+          
+            
+              Can Rager,
+            
+          
+        
+      
+        
+          
+          
+            
+              Aruna Sankaranarayanan,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma,
+            
+          
+        
+      
+        
+          
+          
+            
+              Jiuding Sun,
+            
+          
+        
+      
+        
+          
+          
+            
+              Eric Todd,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>Computational Linguistics</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2408.01416" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Interpretability provides a toolset for understanding how and why language models behave in certain ways. However, there is little unity in the field: most studies employ ad-hoc evaluations and do not share theoretical foundations, making it difficult to measure progress and compare the pros and cons of different techniques. Furthermore, while mechanistic understanding is frequently discussed, the basic causal units underlying these mechanisms are often not explicitly defined. In this article, we propose a perspective on interpretability research grounded in causal mediation analysis. Specifically, we describe the history and current state of interpretability taxonomized according to the types of causal units (mediators) employed, as well as methods used to search over mediators. We discuss the pros and cons of each mediator, providing insights as to when particular kinds of mediators and search methods are most appropriate. We argue that this framing yields a more cohesive narrative of the field and helps researchers select appropriate methods based on their research objective. Our analysis yields actionable recommendations for future work, including the discovery of new mediators and the development of standardized evaluations tailored to these goals.</p>
   </span>
   
 </div>
@@ -1338,6 +1508,93 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </li></ol>
 <h2 class="bibliography">Conference Papers</h2>
 <ol class="bibliography"><li>
+  <abbr>[NeurIPS]</abbr>
+
+
+<div id="nikankin:2025:neurips">
+  
+    <span class="title">Same Task, Different Circuits: Disentangling Modality-Specific Mechanisms in VLMs.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Yaniv Nikankin,
+            
+          
+        
+      
+        
+          
+          
+            
+              Dana Arad,
+            
+          
+        
+      
+        
+          
+          
+            
+              Yossi Gandelsman,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2506.09047" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Vision-Language models (VLMs) show impressive abilities to answer questions on visual inputs (e.g., counting objects in an image), yet demonstrate higher accuracies when performing an analogous task on text (e.g., counting words in a text). We investigate this accuracy gap by identifying and comparing the circuits—the task-specific computational sub-graphs—in different modalities. We show that while circuits are largely disjoint between modalities, they implement relatively similar functionalities: the differences lie primarily in processing modality-specific data positions (an image or a text sequence). Zooming in on the image data representations, we observe they become aligned with the higher-performing analogous textual representations only towards later layers, too late in processing to effectively influence subsequent positions. To overcome this, we patch the representations of visual data tokens from later layers back into earlier layers. In experiments with multiple tasks and models, this simple intervention closes a third of the performance gap between the modalities, on average. Our analysis sheds light on the multi-modal performance gap in VLMs and suggests a training-free approach for reducing it.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[EMNLP]</abbr>
 
 
@@ -1394,6 +1651,8 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
     [<a class="abstract">Abstract</a>]
   
+  
+    [<a href="https://belinkov.com/assets/pdf/emnlp2025-sae.pdf" target="_blank">PDF</a>]
   
   
   
@@ -1684,86 +1943,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   <abbr>[COLM]</abbr>
 
 
-<div id="itzhak:2025">
-  
-    <span class="title">Planted in Pretraining, Swayed by Finetuning: A Case Study on the Origins of Cognitive Biases in LLMs.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Itay Itzhak,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              Gabriel Stanovsky
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2025 Conference on Language Models (COLM)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2507.07186" target="_blank">Arxiv</a>]
-  
-  
-    [<a href="https://itay1itzhak.github.io/planted-in-pretraining/" target="_blank">URL</a>]
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Large language models (LLMs) exhibit cognitive biases – systematic tendencies of irrational decision-making, similar to those seen in humans. Prior work has found that these biases vary across models and can be amplified by instruction tuning. However, it remains unclear if these differences in biases stem from pretraining, finetuning, or even random noise due to training stochasticity. We propose a two-step causal experimental approach to disentangle these factors. First, we finetune models multiple times using different random seeds to study how training randomness affects over 30 cognitive biases. Second, we introduce <i>cross-tuning</i> – swapping instruction datasets between models to isolate bias sources. This swap uses datasets that led to different bias patterns, directly testing whether biases are dataset-dependent. Our findings reveal that while training randomness introduces some variability, biases are mainly shaped by pretraining: models with the same pretrained backbone exhibit more similar bias patterns than those sharing only finetuning data. These insights suggest that understanding biases in finetuned models requires considering their pretraining origins beyond finetuning effects. This perspective can guide future efforts to develop principled strategies for evaluating and mitigating bias in LLMs.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[COLM]</abbr>
-
-
 <div id="gekhman:2025">
   
     <span class="title">Inside-Out: Hidden Factual Knowledge in LLMs.</span>
@@ -1879,6 +2058,86 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>This work presents a framework for assessing whether large language models (LLMs) encode more factual knowledge in their parameters than what they express in their outputs. While a few studies hint at this possibility, none has clearly defined or demonstrated this phenomenon. We first propose a formal definition of knowledge, quantifying it for a given question as the fraction of correct-incorrect answer pairs where the correct one is ranked higher. This gives rise to external and internal knowledge, depending on the information used to score individual answer candidates: either the model’s observable token-level probabilities or its intermediate computations. Hidden knowledge arises when internal knowledge exceeds external knowledge. We then present a case study, applying this framework to three popular open-weights LLMs in a closed-book QA setup. Our results indicate that: (1) LLMs consistently encode more factual knowledge internally than what they express externally, with an average relative gap of 40%. (2) Surprisingly, some knowledge is so deeply hidden that a model can internally know an answer perfectly, yet fail to generate it even once, despite large-scale repeated sampling of 1,000 answers. This reveals fundamental limitations in the generation capabilities of LLMs, which (3) put a practical constraint on scaling test-time compute via repeated answer sampling in closed-book QA: significant performance improvements remain inaccessible because some answers are practically never sampled, yet if they were, we would be guaranteed to rank them first.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[COLM]</abbr>
+
+
+<div id="itzhak:2025">
+  
+    <span class="title">Planted in Pretraining, Swayed by Finetuning: A Case Study on the Origins of Cognitive Biases in LLMs.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Itay Itzhak,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              Gabriel Stanovsky
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2025 Conference on Language Models (COLM, Oral presentation)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2507.07186" target="_blank">Arxiv</a>]
+  
+  
+    [<a href="https://itay1itzhak.github.io/planted-in-pretraining/" target="_blank">URL</a>]
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Large language models (LLMs) exhibit cognitive biases – systematic tendencies of irrational decision-making, similar to those seen in humans. Prior work has found that these biases vary across models and can be amplified by instruction tuning. However, it remains unclear if these differences in biases stem from pretraining, finetuning, or even random noise due to training stochasticity. We propose a two-step causal experimental approach to disentangle these factors. First, we finetune models multiple times using different random seeds to study how training randomness affects over 30 cognitive biases. Second, we introduce <i>cross-tuning</i> – swapping instruction datasets between models to isolate bias sources. This swap uses datasets that led to different bias patterns, directly testing whether biases are dataset-dependent. Our findings reveal that while training randomness introduces some variability, biases are mainly shaped by pretraining: models with the same pretrained backbone exhibit more similar bias patterns than those sharing only finetuning data. These insights suggest that understanding biases in finetuned models requires considering their pretraining origins beyond finetuning effects. This perspective can guide future efforts to develop principled strategies for evaluating and mitigating bias in LLMs.</p>
   </span>
   
 </div>
@@ -2064,6 +2323,84 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Text-to-image (T2I) diffusion models rely on encoded prompts to guide the image generation process. Typically, these prompts are extended to a fixed length by adding padding tokens before text encoding. Despite being a default practice, the influence of padding tokens on the image generation process has not been investigated. In this work, we conduct the first in-depth analysis of the role padding tokens play in T2I models. We develop two causal techniques to analyze how information is encoded in the representation of tokens across different components of the T2I pipeline. Using these techniques, we investigate when and how padding tokens impact the image generation process. Our findings reveal three distinct scenarios: padding tokens may affect the model’s output during text encoding, during the diffusion process, or be effectively ignored. Moreover, we identify key relationships between these scenarios and the model’s architecture (cross or self-attention) and its training process (frozen or trained text encoder). These insights contribute to a deeper understanding of the mechanisms of padding tokens, potentially informing future model design and training practices in T2I systems.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="carmeli:2025:iclr">
+  
+    <span class="title">CtD: Composition through Decomposition in Emergent Communication.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Boaz Carmeli,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://ronmeir.net.technion.ac.il" target="_blank">Ron Meir</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2025-ctd.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Compositionality is a cognitive mechanism that allows humans to systematically combine known concepts in novel ways. This study demonstrates how artificial neural agents acquire and utilize compositional generalization to describe previously unseen images. Our method, termed “Composition through Decomposition”, involves two sequential training steps. In the ’Decompose’ step, the agents learn to decompose an image into basic concepts using a codebook acquired during interaction in a multi-target coordination game. Subsequently, in the ‘Compose’ step, the agents employ this codebook to describe novel images by composing basic concepts into complex phrases. Remarkably, we observe cases where generalization in the ‘Compose’ step is achieved zero-shot, without the need for additional training.</p>
   </span>
   
 </div>
@@ -2662,84 +2999,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>We present Jamba, a novel hybrid Transformer-Mamba mixture-of-experts (MoE) architecture. Jamba interleaves blocks of Transformer and Mamba layers, enjoying the benefits of both model families. MoE is added in some of these layers to increase model capacity while keeping active parameter usage manageable. This flexible architecture allows resource- and objective-specific configurations. We implement two configurations: Jamba-1.5-Large, with 94B active parameters, and Jamba-1.5-mini, with 12B active parameters. Built at large scale, Jamba models provide high throughput and small memory footprint compared to vanilla Transformers, especially at long-context tasks, with an effective context length of 256K tokens, the largest amongst open-weight models. At the same time, they are also competitive on standard language modeling and chatbot benchmarks. We study various architectural decisions, such as how to combine Transformer and Mamba layers, and how to mix experts, and show that some of them are crucial in large scale modeling. To support cost-effective inference, we introduce ExpertsInt8, a novel quantization technique that allows fitting Jamba-1.5-Large on a machine with 8 80GB GPUs when processing 256K-token contexts without loss of quality. We also describe several interesting properties of this architecture that the training and evaluation of Jamba have revealed. The model weights are publicly available.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-<div id="carmeli:2025:iclr">
-  
-    <span class="title">CtD: Composition through Decomposition in Emergent Communication.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Boaz Carmeli,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://ronmeir.net.technion.ac.il" target="_blank">Ron Meir</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2025-ctd.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Compositionality is a cognitive mechanism that allows humans to systematically combine known concepts in novel ways. This study demonstrates how artificial neural agents acquire and utilize compositional generalization to describe previously unseen images. Our method, termed “Composition through Decomposition”, involves two sequential training steps. In the ’Decompose’ step, the agents learn to decompose an image into basic concepts using a codebook acquired during interaction in a multi-target coordination game. Subsequently, in the ‘Compose’ step, the agents employ this codebook to describe novel images by composing basic concepts into complex phrases. Remarkably, we observe cases where generalization in the ‘Compose’ step is achieved zero-shot, without the need for additional training.</p>
   </span>
   
 </div>
@@ -3351,6 +3610,106 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </div>
 </li>
 <li>
+  <abbr>[ACL]</abbr>
+
+
+<div id="haklay:2025">
+  
+    <span class="title">Position-aware Automatic Circuit Discovery.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Tal Haklay,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2025-peap.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/PEAP" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2502.04577" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>A widely used strategy to discover and understand language model mechanisms is circuit analysis. A circuit is a minimal subgraph of a model’s computation graph that executes a specific task. We identify a gap in existing circuit discovery methods: they assume circuits are position-invariant, treating model components as equally relevant across input positions. This limits their ability to capture cross-positional interactions or mechanisms that vary across positions. To address this gap, we propose two improvements to incorporate positionality into circuits, even on tasks containing variable-length examples. First, we extend edge attribution patching, a gradient-based method for circuit discovery, to differentiate between token positions. Second, we introduce the concept of a dataset schema, which defines token spans with similar semantics across examples, enabling position-aware circuit discovery in datasets with variable length examples. We additionally develop an automated pipeline for schema generation and application using large language models. Our approach enables fully automated discovery of position-sensitive circuits, yielding better trade-offs between circuit size and faithfulness compared to prior work.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[ICML]</abbr>
 
 
@@ -3611,19 +3970,19 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </div>
 </li>
 <li>
-  <abbr>[ACL]</abbr>
+  <abbr>[NeurIPS]</abbr>
 
 
-<div id="haklay:2025">
+<div id="benzion:2024:neurips">
   
-    <span class="title">Position-aware Automatic Circuit Discovery.</span>
+    <span class="title">Semantics and Spatiality of Emergent Communication.</span>
     <span class="author">
       
         
           
           
             
-              Tal Haklay,
+              Rotem Ben Zion,
             
           
         
@@ -3632,7 +3991,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              <a href="https://orgadhadas.github.io" target="_blank">Hadas Orgad</a>,
+              Boaz Carmeli,
             
           
         
@@ -3641,16 +4000,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              <a href="https://baulab.info" target="_blank">David Bau</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
+              Orr Paradise,
             
           
         
@@ -3668,10 +4018,10 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     
     <span class="periodical">
     
-      <em>In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+      <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>
     
     
-      2025
+      2024
     
     </span>
     
@@ -3686,16 +4036,14 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/acl2025-peap.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/neurips2025-comm.pdf" target="_blank">PDF</a>]
   
   
   
   
   
-    [<a href="https://github.com/technion-cs-nlp/PEAP" target="_blank">Code</a>]
   
-  
-    [<a href="https://arxiv.org/abs/2502.04577" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2411.10173" target="_blank">Arxiv</a>]
   
   
    
@@ -3705,7 +4053,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>A widely used strategy to discover and understand language model mechanisms is circuit analysis. A circuit is a minimal subgraph of a model’s computation graph that executes a specific task. We identify a gap in existing circuit discovery methods: they assume circuits are position-invariant, treating model components as equally relevant across input positions. This limits their ability to capture cross-positional interactions or mechanisms that vary across positions. To address this gap, we propose two improvements to incorporate positionality into circuits, even on tasks containing variable-length examples. First, we extend edge attribution patching, a gradient-based method for circuit discovery, to differentiate between token positions. Second, we introduce the concept of a dataset schema, which defines token spans with similar semantics across examples, enabling position-aware circuit discovery in datasets with variable length examples. We additionally develop an automated pipeline for schema generation and application using large language models. Our approach enables fully automated discovery of position-sensitive circuits, yielding better trade-offs between circuit size and faithfulness compared to prior work.</p>
+    <p>When artificial agents are jointly trained to perform collaborative tasks using a communication channel, they develop opaque goal-oriented communication protocols. Good task performance is often considered sufficient evidence that meaningful communication is taking place, but existing empirical results show that communication strategies induced by common objectives can be counterintuitive whilst solving the task nearly perfectly. In this work, we identify a goal-agnostic prerequisite to meaningful communication, which we term semantic consistency, based on the idea that messages should have similar meanings across instances. We provide a formal definition for this idea, and use it to compare the two most common objectives in the field of emergent communication: discrimination and reconstruction. We prove, under mild assumptions, that semantically inconsistent communication protocols can be optimal solutions to the discrimination task, but not to reconstruction. We further show that the reconstruction objective encourages a stricter property, spatial meaningfulness, which also accounts for the distance between messages. Experiments with emergent communication games validate our theoretical results. These findings demonstrate an inherent advantage of distance-based communication goals, and contextualize previous empirical discoveries.</p>
   </span>
   
 </div>
@@ -3818,93 +4166,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Despite their widespread use, the mechanisms by which large language models (LLMs) represent and regulate uncertainty in next-token predictions remain largely unexplored. This study investigates two critical components believed to influence this uncertainty: the recently discovered entropy neurons and a new set of components that we term token frequency neurons. Entropy neurons are characterized by an unusually high weight norm and influence the final layer normalization (LayerNorm) scale to effectively scale down the logits. Our work shows that entropy neurons operate by writing onto an \textitunembedding null space, allowing them to impact the residual stream norm with minimal direct effect on the logits themselves. We observe the presence of entropy neurons across a range of models, up to 7 billion parameters. On the other hand, token frequency neurons, which we discover and describe here for the first time, boost or suppress each token’s logit proportionally to its log frequency, thereby shifting the output distribution towards or away from the unigram distribution. Finally, we present a detailed case study where entropy neurons actively manage confidence: the setting of induction, i.e. detecting and continuing repeated subsequences.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[NeurIPS]</abbr>
-
-
-<div id="benzion:2024:neurips">
-  
-    <span class="title">Semantics and Spatiality of Emergent Communication.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Rotem Ben Zion,
-            
-          
-        
-      
-        
-          
-          
-            
-              Boaz Carmeli,
-            
-          
-        
-      
-        
-          
-          
-            
-              Orr Paradise,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>
-    
-    
-      2024
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/neurips2025-comm.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>When artificial agents are jointly trained to perform collaborative tasks using a communication channel, they develop opaque goal-oriented communication protocols. Good task performance is often considered sufficient evidence that meaningful communication is taking place, but existing empirical results show that communication strategies induced by common objectives can be counterintuitive whilst solving the task nearly perfectly. In this work, we identify a goal-agnostic prerequisite to meaningful communication, which we term semantic consistency, based on the idea that messages should have similar meanings across instances. We provide a formal definition for this idea, and use it to compare the two most common objectives in the field of emergent communication: discrimination and reconstruction. We prove, under mild assumptions, that semantically inconsistent communication protocols can be optimal solutions to the discrimination task, but not to reconstruction. We further show that the reconstruction objective encourages a stricter property, spatial meaningfulness, which also accounts for the distance between messages. Experiments with emergent communication games validate our theoretical results. These findings demonstrate an inherent advantage of distance-based communication goals, and contextualize previous empirical discoveries.</p>
   </span>
   
 </div>
@@ -4162,19 +4423,19 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
 </div>
 </li>
 <li>
-  <abbr>[ICLR]</abbr>
+  <abbr>[EACL]</abbr>
 
 
-<div id="hernandez:2024:iclr">
+<div id="muhlgay:2024:eacl">
   
-    <span class="title">Linearity of Relation Decoding in Transformer Language Models.</span>
+    <span class="title">Generating Benchmarks for Factuality Evaluation of Language Models.</span>
     <span class="author">
       
         
           
           
             
-              Evan Hernandez*,
+              Dor Muhlgay,
             
           
         
@@ -4183,7 +4444,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              Arnab Sen Sharma*,
+              Ori Ram,
             
           
         
@@ -4192,7 +4453,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              Tal Haklay,
+              Inbal Magar,
             
           
         
@@ -4201,7 +4462,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              Kevin Meng,
+              Yoav Levine,
             
           
         
@@ -4210,16 +4471,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
           
           
             
-              Martin Wattenberg,
-            
-          
-        
-      
-        
-          
-          
-            
-              Jacob Andreas,
+              Nir Ratner,
             
           
         
@@ -4234,9 +4486,36 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
         
           
           
+            
+              Omri Abend,
+            
+          
+        
+      
+        
+          
           
             
-              <a href="https://baulab.info" target="_blank">David Bau</a>
+              Kevin Leyton-Brown,
+            
+          
+        
+      
+        
+          
+          
+            
+              Amnon Shashua,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Yoav Shoham
             
           
         
@@ -4246,7 +4525,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     
     <span class="periodical">
     
-      <em>In International Conference on Learning Representations (ICLR, Spotlight)</em>
+      <em>In Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics</em>
     
     
       2024
@@ -4269,19 +4548,17 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   
   
-    [<a href="https://arxiv.org/abs/2308.09124" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2307.06908" target="_blank">Arxiv</a>]
   
   
    
-  
-    [Media: <a href="https://news.mit.edu/2024/large-language-models-use-surprisingly-simple-mechanism-retrieve-stored-knowledge-0325" target="_blank">MIT News</a>, <a href="https://www.sflorg.com/2024/03/ai03252401.html" target="_blank">Scientific Frontline</a>] 
   
   </span>
 
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Much of the knowledge encoded in transformer language models (LMs) may be expressed in terms of relations: relations between words and their synonyms, entities and their attributes, etc. We show that, for a subset of relations, this computation is well-approximated by a single linear transformation on the subject representation. Linear relation representations may be obtained by constructing a first-order approximation to the LM from a single prompt, and they exist for a variety of factual, commonsense, and linguistic relations. However, we also identify many cases in which LM predictions capture relational knowledge accurately, but this knowledge is not linearly encoded in their representations. Our results thus reveal a simple, interpretable, but heterogeneously deployed knowledge representation strategy in transformer LMs.</p>
+    <p>Before deploying a language model (LM) within a given domain, it is important to measure its tendency to generate factually incorrect information in that domain. Existing methods for factuality evaluation of LLM generation focus on facts sampled from the LM itself, and thus do not control the set of evaluated facts and might under-represent domain specific or rare facts.  We propose FACTOR: Factual Assessment via Corpus TransfORmation, a scalable approach for evaluating LM factuality.  FACTOR automatically transforms a factual corpus of interest into a benchmark evaluating an LM’s propensity to generate true facts from the corpus vs. similar but incorrect statements. We use our framework to create three benchmarks: Wiki-FACTOR, News-FACTOR and Expert-FACTOR. We show that: (i) our benchmark scores increase with model size and improve when the LM is augmented with retrieval; (ii) benchmark score and perplexity do not always agree on model ranking; (iii) when perplexity and benchmark score disagree, the latter better reflects factuality in open-ended generation, as measured by human annotators.</p>
   </span>
   
 </div>
@@ -4800,147 +5077,6 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
 </div>
 </li>
 <li>
-  <abbr>[EACL]</abbr>
-
-
-<div id="muhlgay:2024:eacl">
-  
-    <span class="title">Generating Benchmarks for Factuality Evaluation of Language Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Dor Muhlgay,
-            
-          
-        
-      
-        
-          
-          
-            
-              Ori Ram,
-            
-          
-        
-      
-        
-          
-          
-            
-              Inbal Magar,
-            
-          
-        
-      
-        
-          
-          
-            
-              Yoav Levine,
-            
-          
-        
-      
-        
-          
-          
-            
-              Nir Ratner,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              Omri Abend,
-            
-          
-        
-      
-        
-          
-          
-            
-              Kevin Leyton-Brown,
-            
-          
-        
-      
-        
-          
-          
-            
-              Amnon Shashua,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Yoav Shoham
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics</em>
-    
-    
-      2024
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2307.06908" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Before deploying a language model (LM) within a given domain, it is important to measure its tendency to generate factually incorrect information in that domain. Existing methods for factuality evaluation of LLM generation focus on facts sampled from the LM itself, and thus do not control the set of evaluated facts and might under-represent domain specific or rare facts.  We propose FACTOR: Factual Assessment via Corpus TransfORmation, a scalable approach for evaluating LM factuality.  FACTOR automatically transforms a factual corpus of interest into a benchmark evaluating an LM’s propensity to generate true facts from the corpus vs. similar but incorrect statements. We use our framework to create three benchmarks: Wiki-FACTOR, News-FACTOR and Expert-FACTOR. We show that: (i) our benchmark scores increase with model size and improve when the LM is augmented with retrieval; (ii) benchmark score and perplexity do not always agree on model ranking; (iii) when perplexity and benchmark score disagree, the latter better reflects factuality in open-ended generation, as measured by human annotators.</p>
-  </span>
-  
-</div>
-</li>
-<li>
   <abbr>[ICLR]</abbr>
 
 
@@ -5032,6 +5168,131 @@ Poetry is prominent in these corpora and one of its main characteristics is the 
   
   <span class="abstract hidden">
     <p>Fine-tuning on generalized tasks such as instruction following, code generation, and mathematics has been shown to enhance language models’ performance on a range of tasks. Nevertheless, explanations of how such fine-tuning influences the internal computations in these models remain elusive. We study how fine-tuning affects the internal mechanisms implemented in language models. As a case study, we explore the property of entity tracking, a crucial facet of language comprehension, where models fine-tuned on mathematics have substantial performance gains. We identify a mechanism that enables entity tracking and show that (i) both the original model and its fine-tuned version implement entity tracking with the same circuit. In fact, the entity tracking circuit of the fine-tuned version performs better than the full original model. (ii) The circuits of all the models implement roughly the same functionality, that is entity tracking is performed by tracking the position of the correct entity in both the original model and its fine-tuned version. (iii) Performance boost in the fine-tuned model is primarily attributed to its improved ability to handle positional information. To uncover these findings, we employ two methods: DCM, which automatically detects model components responsible for specific semantics, and CMAP, a new approach for patching activations across models to reveal improved mechanisms. Our findings suggest that fine-tuning enhances, rather than fundamentally alters, the mechanistic operation of the model.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ICLR]</abbr>
+
+
+<div id="hernandez:2024:iclr">
+  
+    <span class="title">Linearity of Relation Decoding in Transformer Language Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Evan Hernandez*,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma*,
+            
+          
+        
+      
+        
+          
+          
+            
+              Tal Haklay,
+            
+          
+        
+      
+        
+          
+          
+            
+              Kevin Meng,
+            
+          
+        
+      
+        
+          
+          
+            
+              Martin Wattenberg,
+            
+          
+        
+      
+        
+          
+          
+            
+              Jacob Andreas,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR, Spotlight)</em>
+    
+    
+      2024
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2308.09124" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+    [Media: <a href="https://news.mit.edu/2024/large-language-models-use-surprisingly-simple-mechanism-retrieve-stored-knowledge-0325" target="_blank">MIT News</a>, <a href="https://www.sflorg.com/2024/03/ai03252401.html" target="_blank">Scientific Frontline</a>] 
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Much of the knowledge encoded in transformer language models (LMs) may be expressed in terms of relations: relations between words and their synonyms, entities and their attributes, etc. We show that, for a subset of relations, this computation is well-approximated by a single linear transformation on the subject representation. Linear relation representations may be obtained by constructing a first-order approximation to the LM from a single prompt, and they exist for a variety of factual, commonsense, and linguistic relations. However, we also identify many cases in which LM predictions capture relational knowledge accurately, but this knowledge is not linearly encoded in their representations. Our results thus reveal a simple, interpretable, but heterogeneously deployed knowledge representation strategy in transformer LMs.</p>
   </span>
   
 </div>
@@ -7556,95 +7817,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <abbr>[EMNLP]</abbr>
 
 
-<div id="durrani:2020:emnlp">
-  
-    <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/emnlp2020-neurons.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2010.02695" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons. We carry out a neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[EMNLP]</abbr>
-
-
 <div id="dalvi:2020:emnlp">
   
     <span class="title">Analyzing Redundancy in Pretrained Transformer Models.</span>
@@ -7726,6 +7898,95 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   
   <span class="abstract hidden">
     <p>Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as: i) 85% of the neurons across the network are redundant and ii) at least 92% of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97% performance while using at-most 10% of the original neurons.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[EMNLP]</abbr>
+
+
+<div id="durrani:2020:emnlp">
+  
+    <span class="title">Analyzing Individual Neurons in Pre-trained Language Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/emnlp2020-neurons.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2010.02695" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons. We carry out a neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.</p>
   </span>
   
 </div>
@@ -7895,6 +8156,104 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   <abbr>[ACL]</abbr>
 
 
+<div id="Mahabadi:2020:acl">
+  
+    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Rabeeh Karimi Mahabadi,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              James Henderson
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2020
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
+  
+  
+    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Several recent studies have shown that strong natural language understanding
+(NLU) models are prone to relying on unwanted dataset biases without learning
+the underlying task, resulting in models that fail to generalize to
+out-of-domain datasets and are likely to perform poorly in real-world
+scenarios. We propose two learning strategies to train neural models, which are
+more robust to such biases and transfer better to out-of-domain datasets. The
+biases are specified in terms of one or more bias-only models, which learn to
+leverage the dataset biases. During training, the bias-only models’ predictions
+are used to adjust the loss of the base model to reduce its reliance on biases
+by down-weighting the biased examples and focusing the training on the hard
+examples. We experiment on large-scale natural language inference and fact
+verification benchmarks, evaluating on out-of-domain datasets that are
+specifically designed to assess the robustness of models against known biases
+in the training data. Results show that our debiasing methods greatly improve
+robustness in all settings and better transfer to other textual entailment
+datasets. Our code and data are publicly available in
+\urlhttps://github.com/rabeehk/robust-nli.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
 <div id="wu:2020:acl">
   
     <span class="title">Similarity Analysis of Contextual Word Representation Models.</span>
@@ -7996,104 +8355,6 @@ In this position paper, we assess the current paradigm of gender bias evaluation
   
   <span class="abstract hidden">
     <p>This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from  vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation.  The analysis reveals that  models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures  have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ACL]</abbr>
-
-
-<div id="Mahabadi:2020:acl">
-  
-    <span class="title">End-to-End Bias Mitigation by Modelling Biases in Corpora.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Rabeeh Karimi Mahabadi,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              James Henderson
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2020
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2020-biases.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/rabeehk/robust-nli" target="_blank">Code</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/1909.06321" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Several recent studies have shown that strong natural language understanding
-(NLU) models are prone to relying on unwanted dataset biases without learning
-the underlying task, resulting in models that fail to generalize to
-out-of-domain datasets and are likely to perform poorly in real-world
-scenarios. We propose two learning strategies to train neural models, which are
-more robust to such biases and transfer better to out-of-domain datasets. The
-biases are specified in terms of one or more bias-only models, which learn to
-leverage the dataset biases. During training, the bias-only models’ predictions
-are used to adjust the loss of the base model to reduce its reliance on biases
-by down-weighting the biased examples and focusing the training on the hard
-examples. We experiment on large-scale natural language inference and fact
-verification benchmarks, evaluating on out-of-domain datasets that are
-specifically designed to assess the robustness of models against known biases
-in the training data. Results show that our debiasing methods greatly improve
-robustness in all settings and better transfer to other textual entailment
-datasets. Our code and data are publicly available in
-\urlhttps://github.com/rabeehk/robust-nli.</p>
   </span>
   
 </div>
@@ -8808,102 +9069,6 @@ Overall, humans are correct more often than out-of-the-box models, and the model
   <abbr>[NAACL]</abbr>
 
 
-<div id="durrani:2019:NAACL">
-  
-    <span class="title">One Size Does Not Fit All: Comparing NMT Representations of Different Granularities.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              Preslav Nakov
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/naacl2019-nmt.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[NAACL]</abbr>
-
-
 <div id="liu:2019:NAACL">
   
     <span class="title">Linguistic Knowledge and Transferability of Contextual Representations.</span>
@@ -8994,6 +9159,102 @@ Overall, humans are correct more often than out-of-the-box models, and the model
   
   <span class="abstract hidden">
     <p>Contextual word representations derived from large-scale neural language models are successful across a diverse set of NLP tasks, suggesting that they encode useful and transferable features of language. To shed light on the linguistic knowledge they capture, we study the representations produced by several recent pretrained contextualizers (variants of ELMo, the OpenAI transformer LM, and BERT) with a suite of sixteen diverse probing tasks. We find that linear models trained on top of frozen contextual representations are competitive with state-of-the-art task-specific models in many cases, but fail on tasks requiring fine-grained linguistic knowledge (e.g., conjunct identification). To investigate the transferability of contextual word representations, we quantify differences in the transferability of individual layers within contextualizers, especially between RNNs and transformers. For instance, higher layers of RNNs are more task-specific, while transformer layers do not exhibit the same monotonic trend. In addition, to better understand what makes contextual word representations transferable, we compare language model pretraining with eleven supervised pretraining tasks. For any given task, pretraining on a closely related task yields better performance than language model pretraining (which is better on average) when the pretraining dataset is fixed. However, language model pretraining on more data gives the best results.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[NAACL]</abbr>
+
+
+<div id="durrani:2019:NAACL">
+  
+    <span class="title">One Size Does Not Fit All: Comparing NMT Representations of Different Granularities.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              Preslav Nakov
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/naacl2019-nmt.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.</p>
   </span>
   
 </div>
@@ -9323,6 +9584,88 @@ Overall, humans are correct more often than out-of-the-box models, and the model
 </div>
 </li>
 <li>
+  <abbr>[SCiL]</abbr>
+
+
+<div id="suzgun:2019:SCiL">
+  
+    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Mirac Suzgun,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
+    
+    
+      2019
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[AAAI]</abbr>
 
 
@@ -9438,88 +9781,6 @@ Overall, humans are correct more often than out-of-the-box models, and the model
   
   <span class="abstract hidden">
     <p>We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[SCiL]</abbr>
-
-
-<div id="suzgun:2019:SCiL">
-  
-    <span class="title">On Evaluating the Generalization of LSTM Models in Formal Languages.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Mirac Suzgun,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://www.eecs.harvard.edu/~shieber/index.html" target="_blank">Stuart M. Shieber</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the Society for Computation in Linguistics (SCiL)</em>
-    
-    
-      2019
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/scil2019.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/suzgunmirac/lstm-eval" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1811.01001" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recurrent Neural Networks (RNNs) are theoretically Turing-complete and established themselves as a dominant model for language processing. Yet, there still remains an uncertainty regarding their language learning capabilities. In this paper, we empirically evaluate the inductive learning capabilities of Long Short-Term Memory networks, a popular extension of simple RNNs, to learn simple formal languages, in particular a^nb^n, a^nb^nc^n, and a^nb^nc^nd^n. We investigate the influence of various aspects of learning, such as training data regimes and model capacity, on the generalization to unobserved samples. We find striking differences in model performances under different training settings and highlight the need for careful analysis and assessment when making claims about the learning capabilities of neural network models.</p>
   </span>
   
 </div>
@@ -9772,6 +10033,106 @@ In this work, we analyze the speech representations learned by a deep end-to-end
   <abbr>[IJCNLP]</abbr>
 
 
+<div id="dalvi:2017:ijcnlp">
+  
+    <span class="title">Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              Stephan Vogel
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 8th International Joint Conference on Natural Language Processing (IJCNLP)</em>
+    
+    
+      2017
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/ijcnlp2017-decoder.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/fdalvi/seq2seq-attn-multitask" target="_blank">Code</a>]
+  
+  
+  
+   
+  
+    [Media: <a href="http://news.mit.edu/2017/reading-neural-network-mind-1211" target="_blank">MIT News</a>] 
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>End-to-end training makes the neural machine translation (NMT) architecture simpler, yet elegant compared to traditional statistical machine translation (SMT). However, little is known about linguistic patterns of morphology, syntax and semantics learned during the training of NMT systems, and more importantly, which parts of the architecture are responsible for learning each of these phenomena. In this paper we i) analyze how much morphology an NMT decoder learns, and ii) investigate whether injecting target morphology into the decoder helps it produce better translations. To this end we present three methods: i) joint generation, ii) joint-data learning, and iii) multi-task learning. Our results show that explicit morphological information helps the decoder learn target language morphology and improves the translation quality by 0.2–0.6 BLEU points.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[IJCNLP]</abbr>
+
+
 <div id="belinkov:2017:ijcnlp">
   
     <span class="title">Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks.</span>
@@ -9875,106 +10236,6 @@ In this work, we analyze the speech representations learned by a deep end-to-end
   
   <span class="abstract hidden">
     <p>While neural machine translation (NMT) models provide improved translation quality in an elegant framework, it is less clear what they learn about language. Recent work has started evaluating the quality of vector representations learned by NMT models on morphological and syntactic tasks. In this paper, we investigate the representations learned at different layers of NMT encoders. We train NMT systems on parallel data and use the models to extract features for training a classifier on two tasks: part-of-speech and semantic tagging. We then measure the performance of the classifier as a proxy to the quality of the original NMT model for the given task. Our quantitative analysis yields interesting insights regarding representation learning in NMT models. For instance, we find that higher layers are better at learning semantics while lower layers tend to be better for part-of-speech tagging. We also observe little effect of the target language on source-side representations, especially in higher quality models.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[IJCNLP]</abbr>
-
-
-<div id="dalvi:2017:ijcnlp">
-  
-    <span class="title">Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              Stephan Vogel
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 8th International Joint Conference on Natural Language Processing (IJCNLP)</em>
-    
-    
-      2017
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/ijcnlp2017-decoder.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/fdalvi/seq2seq-attn-multitask" target="_blank">Code</a>]
-  
-  
-  
-   
-  
-    [Media: <a href="http://news.mit.edu/2017/reading-neural-network-mind-1211" target="_blank">MIT News</a>] 
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>End-to-end training makes the neural machine translation (NMT) architecture simpler, yet elegant compared to traditional statistical machine translation (SMT). However, little is known about linguistic patterns of morphology, syntax and semantics learned during the training of NMT systems, and more importantly, which parts of the architecture are responsible for learning each of these phenomena. In this paper we i) analyze how much morphology an NMT decoder learns, and ii) investigate whether injecting target morphology into the decoder helps it produce better translations. To this end we present three methods: i) joint generation, ii) joint-data learning, and iii) multi-task learning. Our results show that explicit morphological information helps the decoder learn target language morphology and improves the translation quality by 0.2–0.6 BLEU points.</p>
   </span>
   
 </div>
@@ -10088,6 +10349,112 @@ In this work, we analyze the speech representations learned by a deep end-to-end
   <abbr>[ACL]</abbr>
 
 
+<div id="belinkov:2017:acl">
+  
+    <span class="title">What do Neural Machine Translation Models Learn about Morphology?.</span>
+    <span class="author">
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+            
+              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2017
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2017.pdf" target="_blank">PDF</a>]
+  
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/acl2017-poster.pdf" target="_blank">Poster</a>]
+  
+  
+  
+    [<a href="https://github.com/boknilev/nmt-repr-analysis" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1704.03471" target="_blank">Arxiv</a>]
+  
+  
+  
+    [<a href="https://vimeo.com/234955191" target="_blank">Talk</a>]
+   
+  
+    [Media: <a href="https://soundcloud.com/nlp-highlights/27-what-do-neural-machine-translation-models-learn-about-morphology-with-yonatan-belinkov" target="_blank">NLP Highlights</a>] 
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
 <div id="sajjad:2017:acl">
   
     <span class="title">Challenging Language-Dependent Segmentation for Arabic: An Application to Machine Translation and Part-of-Speech Tagging.</span>
@@ -10187,112 +10554,6 @@ In this work, we analyze the speech representations learned by a deep end-to-end
   
   <span class="abstract hidden">
     <p>Word segmentation plays a pivotal role in improving any Arabic NLP application. Therefore, a lot of research has been spent in improving its accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii) domain/dialect dependent. We explore three language-independent alternatives to morphological segmentation using: i) data-driven sub-word units, ii) characters as a unit of learning, and iii) word embeddings learned using a character CNN (Convolution Neural Network). On the tasks of Machine Translation and POS tagging, we found these methods to achieve close to, and occasionally surpass state-of-the-art performance. In our analysis, we show that a neural machine translation system is sensitive to the ratio of source and target tokens, and a ratio close to 1 or greater, gives optimal performance.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ACL]</abbr>
-
-
-<div id="belinkov:2017:acl">
-  
-    <span class="title">What do Neural Machine Translation Models Learn about Morphology?.</span>
-    <span class="author">
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              <a href="http://alt.qcri.org/~ndurrani/" target="_blank">Nadir Durrani</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://fdalvi.github.io" target="_blank">Fahim Dalvi</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2017
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2017.pdf" target="_blank">PDF</a>]
-  
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/acl2017-poster.pdf" target="_blank">Poster</a>]
-  
-  
-  
-    [<a href="https://github.com/boknilev/nmt-repr-analysis" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1704.03471" target="_blank">Arxiv</a>]
-  
-  
-  
-    [<a href="https://vimeo.com/234955191" target="_blank">Talk</a>]
-   
-  
-    [Media: <a href="https://soundcloud.com/nlp-highlights/27-what-do-neural-machine-translation-models-learn-about-morphology-with-yonatan-belinkov" target="_blank">NLP Highlights</a>] 
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure.</p>
   </span>
   
 </div>
@@ -11268,79 +11529,6 @@ We propose a framework that facilitates better understanding of the encoded repr
 </li>
 <li>
 
-<div id="belinkov-glass:2016:VarDial">
-  
-    <span class="title">A Character-level Convolutional Neural Network for Distinguishing Similar Languages and Dialects.</span>
-    <span class="author">
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the Third Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial at Coling)</em>
-    
-    
-      2016
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/vardial2016.pdf" target="_blank">PDF</a>]
-  
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/vardial2016-poster.pdf" target="_blank">Poster</a>]
-  
-  
-  
-    [<a href="https://github.com/boknilev/dsl-char-cnn" target="_blank">Code</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/1609.07568" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Discriminating between closely-related language varieties is considered a challenging and important task. This paper describes our submission to the DSL 2016 shared-task, which included two sub-tasks: one on discriminating similar languages and one on identifying Arabic dialects. We developed a character-level neural network for this task. Given a sequence of characters, our model embeds each character in vector space, runs the sequence through multiple convolutions with different filter widths, and pools the convolutional representations to obtain a hidden vector representation of the text that is used for predicting the language or dialect. We primarily focused on the Arabic dialect identification task and obtained an F1 score of 0.4834, ranking 6th out of 18 participants. We also analyze errors made by our system on the Arabic data in some detail, and point to challenges such an approach is faced with.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-
 <div id="belinkov-EtAl:2016:LT4DH">
   
     <span class="title">Shamela: A Large-Scale Historical Arabic Corpus.</span>
@@ -11440,6 +11628,79 @@ We propose a framework that facilitates better understanding of the encoded repr
 	analyzer, and enhance it by detecting parallel passages and automatically
 	dating undated texts. We demonstrate its utility with selected case-studies in
 	which we show its application to the digital humanities.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="belinkov-glass:2016:VarDial">
+  
+    <span class="title">A Character-level Convolutional Neural Network for Distinguishing Similar Languages and Dialects.</span>
+    <span class="author">
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="http://people.csail.mit.edu/jrg/" target="_blank">James Glass</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the Third Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial at Coling)</em>
+    
+    
+      2016
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/vardial2016.pdf" target="_blank">PDF</a>]
+  
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/vardial2016-poster.pdf" target="_blank">Poster</a>]
+  
+  
+  
+    [<a href="https://github.com/boknilev/dsl-char-cnn" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/1609.07568" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Discriminating between closely-related language varieties is considered a challenging and important task. This paper describes our submission to the DSL 2016 shared-task, which included two sub-tasks: one on discriminating similar languages and one on identifying Arabic dialects. We developed a character-level neural network for this task. Given a sequence of characters, our model embeds each character in vector space, runs the sequence through multiple convolutions with different filter widths, and pools the convolutional representations to obtain a hidden vector representation of the text that is used for predicting the language or dialect. We primarily focused on the Arabic dialect identification task and obtained an F1 score of 0.4834, ranking 6th out of 18 participants. We also analyze errors made by our system on the Arabic data in some detail, and point to challenges such an approach is faced with.</p>
   </span>
   
 </div>
@@ -12385,81 +12646,6 @@ We propose a framework that facilitates better understanding of the encoded repr
 </li>
 <li>
 
-<div id="nikankin:vlms">
-  
-    <span class="title">Same Task, Different Circuits: Disentangling Modality-Specific Mechanisms in VLMs.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Yaniv Nikankin,
-            
-          
-        
-      
-        
-          
-          
-            
-              Dana Arad,
-            
-          
-        
-      
-        
-          
-          
-            
-              Yossi Gandelsman,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2506.09047" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
 <div id="kaplan:toker:flow">
   
     <span class="title">Follow the Flow: On Information Flow Across Textual Tokens in Text-to-Image Models.</span>
@@ -12771,162 +12957,6 @@ We propose a framework that facilitates better understanding of the encoded repr
    
   
     [Media: <a href="https://www.forbes.com/sites/lanceeliot/2024/12/03/breakthrough-in-preemptive-detection-of-ai-hallucinations-reveals-vital-clues-to-writing-prompts-that-keep-generative-ai-from-freaking-out/" target="_blank">Forbes</a>] 
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-
-<div id="mueller:mediator">
-  
-    <span class="title">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Jannik Brinkmann,
-            
-          
-        
-      
-        
-          
-          
-            
-              Millicent Li,
-            
-          
-        
-      
-        
-          
-          
-            
-              Samuel Marks,
-            
-          
-        
-      
-        
-          
-          
-            
-              Koyena Pal,
-            
-          
-        
-      
-        
-          
-          
-            
-              Nikhil Prakash,
-            
-          
-        
-      
-        
-          
-          
-            
-              Can Rager,
-            
-          
-        
-      
-        
-          
-          
-            
-              Aruna Sankaranarayanan,
-            
-          
-        
-      
-        
-          
-          
-            
-              Arnab Sen Sharma,
-            
-          
-        
-      
-        
-          
-          
-            
-              Jiuding Sun,
-            
-          
-        
-      
-        
-          
-          
-            
-              Eric Todd,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2408.01416" target="_blank">Arxiv</a>]
-  
-  
-   
   
   </span>
 
