@@ -1564,7 +1564,11 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     [<a class="abstract">Abstract</a>]
   
   
+    [<a href="https://belinkov.com/assets/pdf/neurips2025.pdf" target="_blank">PDF</a>]
   
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/neurips2025-poster.pdf" target="_blank">Poster</a>]
   
   
   
@@ -1680,247 +1684,6 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
   <span class="abstract hidden">
     <p>Prior work on large language model (LLM) hallucinations has associated them with model uncertainty or inaccurate knowledge. In this work, we define and investigate a distinct type of hallucination, where a model can consistently answer a question correctly, but a seemingly trivial perturbation, which can happen in real-world settings, causes it to produce a hallucinated response with high certainty. This phenomenon, which we dub CHOKE (Certain Hallucinations Overriding Known Evidence), is particularly concerning in high-stakes domains such as medicine or law, where model certainty is often used as a proxy for reliability. We show that CHOKE examples are consistent across prompts, occur in different models and datasets, and are fundamentally distinct from other hallucinations. This difference leads existing mitigation methods to perform worse on CHOKE examples than on general hallucinations. Finally, we introduce a probing-based mitigation that outperforms existing methods on CHOKE hallucinations. These findings reveal an overlooked aspect of hallucinations, emphasizing the need to understand their origins and improve mitigation strategies to enhance LLM safety.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[BlackboxNLP]</abbr>
-
-
-<div id="nikankin:shared:2025">
-  
-    <span class="title">BlackboxNLP-2025 MIB Shared Task: Improving Circuit Faithfulness via Better Edge Selection.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Yaniv Nikankin,
-            
-          
-        
-      
-        
-          
-          
-            
-              Dana Arad,
-            
-          
-        
-      
-        
-          
-          
-            
-              Itay Itzhak,
-            
-          
-        
-      
-        
-          
-          
-            
-              Anja Reusch,
-            
-          
-        
-      
-        
-          
-          
-            
-              Adi Simhi,
-            
-          
-        
-      
-        
-          
-          
-            
-              Gal Kesten-Pomeranz,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/blackboxnlp2019-system.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://github.com/technion-cs-nlp/MIB-Shared-Task" target="_blank">Code</a>]
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>One of the main challenges in mechanistic interpretability is circuit discovery – determining which parts of a model perform a given task. We build on the Mechanistic Interpretability Benchmark (MIB) and propose three key improvements to circuit discovery. First, we use bootstrapping to identify edges with consistent attribution scores. Second, we introduce a simple ratio-based selection strategy to prioritize strong positive-scoring edges, balancing performance and faithfulness. Third, we replace the standard greedy selection with an integer linear programming formulation. Our methods yield more faithful circuits and outperform prior approaches across multiple MIB tasks and models.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[BlackboxNLP]</abbr>
-
-
-<div id="blackbox:shared:2025">
-  
-    <span class="title">Findings of the BlackboxNLP 2025 Shared Task: Localizing Circuits and Causal Variables in Language Models.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Dana Arad,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-            
-              Hanjie Chen,
-            
-          
-        
-      
-        
-          
-          
-            
-              Najoung Kim,
-            
-          
-        
-      
-        
-          
-          
-            
-              Hosein Mohebbi,
-            
-          
-        
-      
-        
-          
-          
-            
-              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
-            
-          
-        
-      
-        
-          
-          
-            
-              Gabriele Sarti,
-            
-          
-        
-      
-        
-          
-          
-          
-            
-              Martin Tutek
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)</em>
-    
-    
-      2025
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/blackboxnlp2019-shared.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-    [<a href="https://huggingface.co/spaces/mib-bench/leaderboard" target="_blank">Code</a>]
-  
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Mechanistic interpretability (MI) seeks to uncover how language models (LMs) implement specific behaviors, yet measuring progress in MI remains challenging. The recently released Mechanistic Interpretability Benchmark (MIB) provides a standardized framework for evaluating circuit and causal variable localization. Building on this foundation, the BlackboxNLP 2025 Shared Task extends MIB into a community-wide reproducible comparison of MI techniques. The shared task features two tracks: circuit localization, which assesses methods that identify causally influential components and interactions driving model behavior, and causal variable localization, which evaluates approaches that map activations into interpretable features. With three teams spanning eight different methods, participants achieved notable gains in circuit localization using ensemble and regularization strategies for circuit discovery. With one team spanning two methods, participants achieved significant gains in causal variable localization using low-dimensional and non-linear projections to featurize activation vectors. The MIB leaderboard remains open; we encourage continued work in this standard evaluation framework to measure progress in MI research going forward.</p>
   </span>
   
 </div>
@@ -2075,6 +1838,8 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
   
     [<a class="abstract">Abstract</a>]
   
+  
+    [<a href="https://belinkov.com/assets/pdf/emnlp2025-cot.pdf" target="_blank">PDF</a>]
   
   
   
@@ -4385,7 +4150,7 @@ The article also presents the ‘sketch grammar’ (the basis for the word sketc
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/neurips2025-comm.pdf" target="_blank">PDF</a>]
+    [<a href="https://belinkov.com/assets/pdf/neurips2024-comm.pdf" target="_blank">PDF</a>]
   
   
   
@@ -11192,6 +10957,251 @@ We propose a framework that facilitates better understanding of the encoded repr
 </li></ol>
 <h2 class="bibliography">Workshop Papers</h2>
 <ol class="bibliography"><li>
+  <abbr>[BlackboxNLP]</abbr>
+
+
+<div id="nikankin:shared:2025">
+  
+    <span class="title">BlackboxNLP-2025 MIB Shared Task: Improving Circuit Faithfulness via Better Edge Selection.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Yaniv Nikankin,
+            
+          
+        
+      
+        
+          
+          
+            
+              Dana Arad,
+            
+          
+        
+      
+        
+          
+          
+            
+              Itay Itzhak,
+            
+          
+        
+      
+        
+          
+          
+            
+              Anja Reusch,
+            
+          
+        
+      
+        
+          
+          
+            
+              Adi Simhi,
+            
+          
+        
+      
+        
+          
+          
+            
+              Gal Kesten-Pomeranz,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/blackboxnlp2019-system.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/technion-cs-nlp/MIB-Shared-Task" target="_blank">Code</a>]
+  
+  
+    [<a href="https://arxiv.org/abs/2510.25786" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>One of the main challenges in mechanistic interpretability is circuit discovery – determining which parts of a model perform a given task. We build on the Mechanistic Interpretability Benchmark (MIB) and propose three key improvements to circuit discovery. First, we use bootstrapping to identify edges with consistent attribution scores. Second, we introduce a simple ratio-based selection strategy to prioritize strong positive-scoring edges, balancing performance and faithfulness. Third, we replace the standard greedy selection with an integer linear programming formulation. Our methods yield more faithful circuits and outperform prior approaches across multiple MIB tasks and models.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[BlackboxNLP]</abbr>
+
+
+<div id="blackbox:shared:2025">
+  
+    <span class="title">Findings of the BlackboxNLP 2025 Shared Task: Localizing Circuits and Causal Variables in Language Models.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Dana Arad,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+            
+              Hanjie Chen,
+            
+          
+        
+      
+        
+          
+          
+            
+              Najoung Kim,
+            
+          
+        
+      
+        
+          
+          
+            
+              Hosein Mohebbi,
+            
+          
+        
+      
+        
+          
+          
+            
+              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>,
+            
+          
+        
+      
+        
+          
+          
+            
+              Gabriele Sarti,
+            
+          
+        
+      
+        
+          
+          
+          
+            
+              Martin Tutek
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)</em>
+    
+    
+      2025
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/blackboxnlp2019-shared.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://huggingface.co/spaces/mib-bench/leaderboard" target="_blank">Code</a>]
+  
+  
+    [<a href="https://www.arxiv.org/abs/2511.18409" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Mechanistic interpretability (MI) seeks to uncover how language models (LMs) implement specific behaviors, yet measuring progress in MI remains challenging. The recently released Mechanistic Interpretability Benchmark (MIB) provides a standardized framework for evaluating circuit and causal variable localization. Building on this foundation, the BlackboxNLP 2025 Shared Task extends MIB into a community-wide reproducible comparison of MI techniques. The shared task features two tracks: circuit localization, which assesses methods that identify causally influential components and interactions driving model behavior, and causal variable localization, which evaluates approaches that map activations into interpretable features. With three teams spanning eight different methods, participants achieved notable gains in circuit localization using ensemble and regularization strategies for circuit discovery. With one team spanning two methods, participants achieved significant gains in causal variable localization using low-dimensional and non-linear projections to featurize activation vectors. The MIB leaderboard remains open; we encourage continued work in this standard evaluation framework to measure progress in MI research going forward.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[RepL4NLP]</abbr>
 
 
