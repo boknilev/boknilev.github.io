@@ -153,6 +153,18 @@ div.equation { margin: 20px 0; }
 /***************************************************************************** Publications ****************************************************************************/
 .publications h2 { color: #2698BA; font-size: 32px; margin: 40px 0; text-align: center; }
 
+.publication-filters { margin: 20px 0 30px; }
+
+.publication-filters-label { display: inline-block; font-weight: bold; margin-right: 8px; }
+
+.publication-filter-chip, .keyphrase-chip, .publication-filter-toggle { background: #fff; border: 1px solid #ddd; border-radius: 999px; color: #333; cursor: pointer; display: inline-block; font-size: 0.85em; margin: 4px 6px 4px 0; padding: 2px 10px; }
+
+.publication-filter-chip.active, .keyphrase-chip.active, .publication-filter-chip:hover, .keyphrase-chip:hover, .publication-filter-toggle:hover { border-color: #2698BA; color: #2698BA; }
+
+.publication-filter-extra.hidden { display: none; }
+
+.publication-filter-extra.hidden.open { display: inline; }
+
 .year { border-bottom: 1px solid #ddd; color: #ddd; margin: 0 -2.5em 40px -2em; padding-bottom: 5px; text-align: right; }
 
 .bibliography { margin-bottom: 20px; margin-top: 20px; list-style-type: circle; }
@@ -169,6 +181,7 @@ div.equation { margin: 20px 0; }
 .bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 .bibliography li span.abstract.hidden { border: dashed 1px #fdfdfd; }
 .bibliography li span.abstract.hidden.open { border-color: #828282; }
+.bibliography li .keyphrases { margin: 4px 0; }
 .bibliography abbr { position: absolute; left: -7em; }
 
 .star { color: #2698BA; font-style: normal; }
