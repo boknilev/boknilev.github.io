@@ -176,16 +176,16 @@
 
 
 
-<div id="tail" class="publication-entry" data-keyphrases="robustness">
+<div id="appapogu:maxbench" class="publication-entry" data-keyphrases="interpretability">
   
-    <span class="title">Growing a Tail: Increasing Output Diversity in Large Language Models.</span>
+    <span class="title">MAxBench: A Multinomial Concept Recovery Benchmark.</span>
     <span class="author">
       
         
           
           
             
-              Michal Shur-Ofry,
+              Divya Appapogu,
             
           
         
@@ -194,7 +194,7 @@
           
           
             
-              Bar Horowitz-Amsalem,
+              Freya Behrens,
             
           
         
@@ -202,9 +202,7 @@
         
           
           
-            
-              Adir Rahamim,
-            
+            <em>Yonatan Belinkov</em>,
           
         
       
@@ -212,7 +210,9 @@
           
           
           
-            <em>Yonatan Belinkov</em>
+            
+              <a href="https://aaronmueller.github.io" target="_blank">Aaron Mueller</a>
+            
           
         
       
@@ -233,7 +233,7 @@
   
     <span class="keyphrases">
     
-      <button class="keyphrase-chip" type="button" data-filter="robustness">robustness</button>
+      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
     
     </span>
   
@@ -246,7 +246,7 @@
   
   
   
-    [<a href="https://arxiv.org/abs/2411.02989" target="_blank">Arxiv</a>]
+    [<a href="https://arxiv.org/abs/2609.13072" target="_blank">Arxiv</a>]
   
   
    
@@ -1142,114 +1142,6 @@
 
 
 
-<div id="shao:2026" class="publication-entry" data-keyphrases="interpretability">
-  
-    <span class="title">Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Shun Shao,
-            
-          
-        
-      
-        
-          
-          
-            
-              Binxu Wang,
-            
-          
-        
-      
-        
-          
-          
-            
-              Shay B. Cohen,
-            
-          
-        
-      
-        
-          
-          
-            
-              Anna Korhonen,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Proceedings of the 2026 Conference on Language Models (COLM)</em>
-    
-    
-      2026
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  
-    <span class="keyphrases">
-    
-      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
-    
-    </span>
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2604.24302" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Mechanistic interpretability has made it possible to localize circuits underlying specific behaviors in language models, but existing methods are expensive, model-specific, and difficult to scale to larger architectures. We introduce Differentiable Faithfulness Alignment (DFA), a framework that transfers circuit information from a smaller source model to a larger target model through a learned differentiable alignment. DFA projects source-model node importance scores into the target model and trains this mapping with a soft faithfulness objective, avoiding full circuit discovery on the target model. We evaluate DFA on Llama-3 and Qwen-2.5 across six tasks spanning factual retrieval, multiple-choice reasoning, and arithmetic. The strongest results occur on Llama-3 1B\rightarrow3B, where aligned circuits are often competitive with direct node attribution and zero-shot transfer remains effective. Recovery weakens for larger source–target gaps and is substantially lower on Qwen-2.5, suggesting that transfer becomes harder as architectural and scaling differences increase. Overall, DFA consistently outperforms simple baselines and, in some settings, recovers target-model circuits with faithfulness comparable to or stronger than direct attribution. These results suggest that smaller models can provide useful mechanistic priors for larger ones, while highlighting both the promise and the limits of node-level cross-model circuit alignment.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[COLM]</abbr>
-
-
-
-
-
-
 <div id="nikankin:2026" class="publication-entry" data-keyphrases="interpretability,trustworthiness">
   
     <span class="title">Reasoning Models Know What’s Important, and Encode It in Their Activations.</span>
@@ -1348,6 +1240,196 @@
   
   <span class="abstract hidden">
     <p>Language models often solve complex tasks by generating long reasoning chains, consisting of many steps with varying importance. While some steps are crucial for generating the final answer, others are removable. Determining which steps matter most, and why, remains an open question central to understanding how models process reasoning. We investigate if this question is best approached through model internals or through tokens of the reasoning chain itself. We find that model activations contain more information than tokens for identifying important reasoning steps. Crucially, by training probes on model activations to predict importance, we show that models encode an internal representation of step importance, even prior to the generation of subsequent steps. This internal representation of importance generalizes across models, is distributed across layers, and does not correlate with surface-level features, such as a step’s relative position or its length. Our findings suggest that analyzing activations can reveal aspects of reasoning that surface-level approaches fundamentally miss, indicating that reasoning analyses should look into model internals.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+  <abbr>[EMNLP]</abbr>
+
+
+
+
+
+
+<div id="sun:2026:emnlp:econ" class="publication-entry" data-keyphrases="interpretability">
+  
+    <span class="title">Does Cognitive Economics Explain LLM Decision-Making?.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Johnathan Sun,
+            
+          
+        
+      
+        
+          
+          
+            
+              Andrei Shleifer,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Findings of the Association for Computational Linguistics: EMNLP 2026 (EMNLP)</em>
+    
+    
+      2026
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  
+    <span class="keyphrases">
+    
+      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
+    
+    </span>
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+  <abbr>[COLM]</abbr>
+
+
+
+
+
+
+<div id="shao:2026" class="publication-entry" data-keyphrases="interpretability">
+  
+    <span class="title">Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Shun Shao,
+            
+          
+        
+      
+        
+          
+          
+            
+              Binxu Wang,
+            
+          
+        
+      
+        
+          
+          
+            
+              Shay B. Cohen,
+            
+          
+        
+      
+        
+          
+          
+            
+              Anna Korhonen,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2026 Conference on Language Models (COLM)</em>
+    
+    
+      2026
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  
+    <span class="keyphrases">
+    
+      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2604.24302" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Mechanistic interpretability has made it possible to localize circuits underlying specific behaviors in language models, but existing methods are expensive, model-specific, and difficult to scale to larger architectures. We introduce Differentiable Faithfulness Alignment (DFA), a framework that transfers circuit information from a smaller source model to a larger target model through a learned differentiable alignment. DFA projects source-model node importance scores into the target model and trains this mapping with a soft faithfulness objective, avoiding full circuit discovery on the target model. We evaluate DFA on Llama-3 and Qwen-2.5 across six tasks spanning factual retrieval, multiple-choice reasoning, and arithmetic. The strongest results occur on Llama-3 1B\rightarrow3B, where aligned circuits are often competitive with direct node attribution and zero-shot transfer remains effective. Recovery weakens for larger source–target gaps and is substantially lower on Qwen-2.5, suggesting that transfer becomes harder as architectural and scaling differences increase. Overall, DFA consistently outperforms simple baselines and, in some settings, recovers target-model circuits with faithfulness comparable to or stronger than direct attribution. These results suggest that smaller models can provide useful mechanistic priors for larger ones, while highlighting both the promise and the limits of node-level cross-model circuit alignment.</p>
   </span>
   
 </div>
@@ -1793,108 +1875,6 @@
   
   
     [<a href="https://arxiv.org/abs/2510.15015" target="_blank">Arxiv</a>]
-  
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-</div>
-</li>
-<li>
-  <abbr>[ACL]</abbr>
-
-
-
-
-
-
-<div id="rahamim:2026:acl" class="publication-entry" data-keyphrases="robustness">
-  
-    <span class="title">Will it Merge? On The Causes of Model Mergeability.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Adir Rahamim,
-            
-          
-        
-      
-        
-          
-          
-            
-              Asaf Yehudai,
-            
-          
-        
-      
-        
-          
-          
-            
-              Leshem Choshen,
-            
-          
-        
-      
-        
-          
-          
-            
-              Yosi Mass,
-            
-          
-        
-      
-        
-          
-          
-          
-            <em>Yonatan Belinkov</em>
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In Findings of the Association for Computational Linguistics (ACL)</em>
-    
-    
-      2026
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  
-    <span class="keyphrases">
-    
-      <button class="keyphrase-chip" type="button" data-filter="robustness">robustness</button>
-    
-    </span>
-  
-
-  <span class="links">
-  
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2601.06672" target="_blank">Arxiv</a>]
   
   
    
@@ -2435,6 +2415,8 @@
     [<a href="https://arxiv.org/abs/2411.02989" target="_blank">Arxiv</a>]
   
   
+    [<a href="https://www.sciencedirect.com/science/article/pii/S2666827026001167" target="_blank">URL</a>]
+  
    
   
   </span>
@@ -2448,6 +2430,8 @@
 </div>
 </li>
 <li>
+  <abbr>[PNAS]</abbr>
+
 
 
 
@@ -2846,6 +2830,108 @@
   
   
     [<a href="https://arxiv.org/abs/2504.01137" target="_blank">Arxiv</a>]
+  
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+  <abbr>[ACL]</abbr>
+
+
+
+
+
+
+<div id="rahamim:2026:acl" class="publication-entry" data-keyphrases="robustness">
+  
+    <span class="title">Will it Merge? On The Causes of Model Mergeability.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Adir Rahamim,
+            
+          
+        
+      
+        
+          
+          
+            
+              Asaf Yehudai,
+            
+          
+        
+      
+        
+          
+          
+            
+              Leshem Choshen,
+            
+          
+        
+      
+        
+          
+          
+            
+              Yosi Mass,
+            
+          
+        
+      
+        
+          
+          
+          
+            <em>Yonatan Belinkov</em>
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In Findings of the Association for Computational Linguistics (ACL)</em>
+    
+    
+      2026
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  
+    <span class="keyphrases">
+    
+      <button class="keyphrase-chip" type="button" data-filter="robustness">robustness</button>
+    
+    </span>
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2601.06672" target="_blank">Arxiv</a>]
   
   
    
@@ -9158,120 +9244,6 @@ Iterative Gradient-Based Projection.</span>
 
 
 
-<div id="meng:2023:memit" class="publication-entry" data-keyphrases="interpretability,trustworthiness">
-  
-    <span class="title">Mass-Editing Memory in a Transformer.</span>
-    <span class="author">
-      
-        
-          
-          
-            
-              Kevin Meng,
-            
-          
-        
-      
-        
-          
-          
-            
-              Arnab Sen Sharma,
-            
-          
-        
-      
-        
-          
-          
-            
-              Alex Andonian,
-            
-          
-        
-      
-        
-          
-          
-            <em>Yonatan Belinkov</em>,
-          
-        
-      
-        
-          
-          
-          
-            
-              <a href="https://baulab.info" target="_blank">David Bau</a>
-            
-          
-        
-      
-    </span>
-
-    
-    <span class="periodical">
-    
-      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
-    
-    
-      2023
-    
-    </span>
-    
-
-    
-  
-
-  
-
-  
-    <span class="keyphrases">
-    
-      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
-    
-      <button class="keyphrase-chip" type="button" data-filter="trustworthiness">trustworthiness</button>
-    
-    </span>
-  
-
-  <span class="links">
-  
-    [<a class="abstract">Abstract</a>]
-  
-  
-    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
-  
-  
-  
-  
-  
-  
-    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
-  
-  
-    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
-  
-   
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-  <abbr>[ICLR]</abbr>
-
-
-
-
-
-
 <div id="dotan:2023:iclr" class="publication-entry" data-keyphrases="biology">
   
     <span class="title">Multiple sequence alignment as a sequence-to-sequence learning problem.</span>
@@ -9411,6 +9383,120 @@ Iterative Gradient-Based Projection.</span>
 </div>
 </li>
 <li>
+  <abbr>[ICLR]</abbr>
+
+
+
+
+
+
+<div id="meng:2023:memit" class="publication-entry" data-keyphrases="interpretability,trustworthiness">
+  
+    <span class="title">Mass-Editing Memory in a Transformer.</span>
+    <span class="author">
+      
+        
+          
+          
+            
+              Kevin Meng,
+            
+          
+        
+      
+        
+          
+          
+            
+              Arnab Sen Sharma,
+            
+          
+        
+      
+        
+          
+          
+            
+              Alex Andonian,
+            
+          
+        
+      
+        
+          
+          
+            <em>Yonatan Belinkov</em>,
+          
+        
+      
+        
+          
+          
+          
+            
+              <a href="https://baulab.info" target="_blank">David Bau</a>
+            
+          
+        
+      
+    </span>
+
+    
+    <span class="periodical">
+    
+      <em>In International Conference on Learning Representations (ICLR, notable top-25%)</em>
+    
+    
+      2023
+    
+    </span>
+    
+
+    
+  
+
+  
+
+  
+    <span class="keyphrases">
+    
+      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
+    
+      <button class="keyphrase-chip" type="button" data-filter="trustworthiness">trustworthiness</button>
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="https://belinkov.com/assets/pdf/iclr2023-memit.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+    [<a href="https://arxiv.org/abs/2210.07229" target="_blank">Arxiv</a>]
+  
+  
+    [<a href="http://memit.baulab.info" target="_blank">URL</a>]
+  
+   
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Recent work has shown exciting promise in updating large language models with new memories, so as to replace obsolete information or add specialized knowledge. However, this line of work is predominantly limited to updating single associations. We develop MEMIT, a method for directly updating a language model with many memories, demonstrating experimentally that it can scale up to thousands of associations for GPT-J (6B) and GPT-NeoX (20B), exceeding prior work by an order of magnitude. Our code and data will be open-sourced upon publication.</p>
+  </span>
+  
+</div>
+</li>
+<li>
   <abbr>[AAAI]</abbr>
 
 
@@ -9506,23 +9592,41 @@ Iterative Gradient-Based Projection.</span>
 </li></ol>
 <h2 class="bibliography">2022</h2>
 <ol class="bibliography"><li>
-  <abbr>[EMNLP]</abbr>
+  <abbr>[NEJLT]</abbr>
 
 
 
 
 
 
-<div id="zaman2022nli" class="publication-entry" data-keyphrases="interpretability,trustworthiness">
+<div id="tirosh-becker:2022" class="publication-entry" data-keyphrases="arabic">
   
-    <span class="title">A Multilingual Perspective Towards the Evaluation of Attribution Methods in Natural Language Inference.</span>
+    <span class="title">Part-of-Speech and Morphological Tagging of Algerian Judeo-Arabic.</span>
     <span class="author">
       
         
           
           
             
-              Kerem Zaman,
+              Ofra Tirosh-Becker*,
+            
+          
+        
+      
+        
+          
+          
+            
+              Michal Kessler*,
+            
+          
+        
+      
+        
+          
+          
+            
+              Oren Becker,
             
           
         
@@ -9540,7 +9644,7 @@ Iterative Gradient-Based Projection.</span>
     
     <span class="periodical">
     
-      <em>In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
+      <em>The Northern European Journal of Language Technology (NEJLT)</em>
     
     
       2022
@@ -9556,9 +9660,7 @@ Iterative Gradient-Based Projection.</span>
   
     <span class="keyphrases">
     
-      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
-    
-      <button class="keyphrase-chip" type="button" data-filter="trustworthiness">trustworthiness</button>
+      <button class="keyphrase-chip" type="button" data-filter="arabic">arabic</button>
     
     </span>
   
@@ -9568,14 +9670,14 @@ Iterative Gradient-Based Projection.</span>
     [<a class="abstract">Abstract</a>]
   
   
+    [<a href="https://belinkov.com/assets/pdf/nejlt2022.pdf" target="_blank">PDF</a>]
   
   
   
   
-    [<a href="https://github.com/KeremZaman/explaiNLI" target="_blank">Code</a>]
   
+    [<a href="https://github.com/technion-cs-nlp/nlp4aja" target="_blank">Code</a>]
   
-    [<a href="https://arxiv.org/abs/2204.05428" target="_blank">Arxiv</a>]
   
   
    
@@ -9585,7 +9687,7 @@ Iterative Gradient-Based Projection.</span>
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Most evaluations of attribution methods focus on the English language. In this work, we present a multilingual approach for evaluating attribution methods for the Natural Language Inference (NLI) task in terms of plausibility and faithfulness properties. First, we introduce a novel cross-lingual strategy to measure faithfulness based on word alignments, which eliminates the potential downsides of erasure-based evaluations. We then perform a comprehensive evaluation of attribution methods, considering different output mechanisms and aggregation methods. Finally, we augment the XNLI dataset with highlight-based explanations, providing a multilingual NLI dataset with highlights, which may support future exNLP studies. Our results show that attribution methods performing best for plausibility and faithfulness are different.</p>
+    <p>Most linguistic studies of Judeo-Arabic, the ensemble of dialects spoken and written by Jews in Arab lands, are qualitative in nature and rely on laborious manual annotation work, and are therefore limited in scale. In this work, we develop automatic methods for morpho-syntactic tagging of Algerian Judeo-Arabic texts published by Algerian Jews in the 19th–20th centuries, based on a linguistically tagged corpus. First, we describe our semi-automatic approach for preprocessing these texts. Then, we experiment with both an off-the-shelf morphological tagger and several specially designed neural network taggers. Finally, we perform a real-world evaluation of new texts that were never tagged before in comparison with human expert annotators. Our experimental results demonstrate that these methods can dramatically speed up and improve the linguistic research pipeline, enabling linguists to study these dialects on a much greater scale.</p>
   </span>
   
 </div>
@@ -9790,41 +9892,23 @@ Iterative Gradient-Based Projection.</span>
 </div>
 </li>
 <li>
-  <abbr>[NEJLT]</abbr>
+  <abbr>[EMNLP]</abbr>
 
 
 
 
 
 
-<div id="tirosh-becker:2022" class="publication-entry" data-keyphrases="arabic">
+<div id="zaman2022nli" class="publication-entry" data-keyphrases="interpretability,trustworthiness">
   
-    <span class="title">Part-of-Speech and Morphological Tagging of Algerian Judeo-Arabic.</span>
+    <span class="title">A Multilingual Perspective Towards the Evaluation of Attribution Methods in Natural Language Inference.</span>
     <span class="author">
       
         
           
           
             
-              Ofra Tirosh-Becker*,
-            
-          
-        
-      
-        
-          
-          
-            
-              Michal Kessler*,
-            
-          
-        
-      
-        
-          
-          
-            
-              Oren Becker,
+              Kerem Zaman,
             
           
         
@@ -9842,7 +9926,7 @@ Iterative Gradient-Based Projection.</span>
     
     <span class="periodical">
     
-      <em>The Northern European Journal of Language Technology (NEJLT)</em>
+      <em>In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>
     
     
       2022
@@ -9858,7 +9942,9 @@ Iterative Gradient-Based Projection.</span>
   
     <span class="keyphrases">
     
-      <button class="keyphrase-chip" type="button" data-filter="arabic">arabic</button>
+      <button class="keyphrase-chip" type="button" data-filter="interpretability">interpretability</button>
+    
+      <button class="keyphrase-chip" type="button" data-filter="trustworthiness">trustworthiness</button>
     
     </span>
   
@@ -9868,14 +9954,14 @@ Iterative Gradient-Based Projection.</span>
     [<a class="abstract">Abstract</a>]
   
   
-    [<a href="https://belinkov.com/assets/pdf/nejlt2022.pdf" target="_blank">PDF</a>]
   
   
   
   
+    [<a href="https://github.com/KeremZaman/explaiNLI" target="_blank">Code</a>]
   
-    [<a href="https://github.com/technion-cs-nlp/nlp4aja" target="_blank">Code</a>]
   
+    [<a href="https://arxiv.org/abs/2204.05428" target="_blank">Arxiv</a>]
   
   
    
@@ -9885,7 +9971,7 @@ Iterative Gradient-Based Projection.</span>
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Most linguistic studies of Judeo-Arabic, the ensemble of dialects spoken and written by Jews in Arab lands, are qualitative in nature and rely on laborious manual annotation work, and are therefore limited in scale. In this work, we develop automatic methods for morpho-syntactic tagging of Algerian Judeo-Arabic texts published by Algerian Jews in the 19th–20th centuries, based on a linguistically tagged corpus. First, we describe our semi-automatic approach for preprocessing these texts. Then, we experiment with both an off-the-shelf morphological tagger and several specially designed neural network taggers. Finally, we perform a real-world evaluation of new texts that were never tagged before in comparison with human expert annotators. Our experimental results demonstrate that these methods can dramatically speed up and improve the linguistic research pipeline, enabling linguists to study these dialects on a much greater scale.</p>
+    <p>Most evaluations of attribution methods focus on the English language. In this work, we present a multilingual approach for evaluating attribution methods for the Natural Language Inference (NLI) task in terms of plausibility and faithfulness properties. First, we introduce a novel cross-lingual strategy to measure faithfulness based on word alignments, which eliminates the potential downsides of erasure-based evaluations. We then perform a comprehensive evaluation of attribution methods, considering different output mechanisms and aggregation methods. Finally, we augment the XNLI dataset with highlight-based explanations, providing a multilingual NLI dataset with highlights, which may support future exNLP studies. Our results show that attribution methods performing best for plausibility and faithfulness are different.</p>
   </span>
   
 </div>
